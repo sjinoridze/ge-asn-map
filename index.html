@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Georgian ASN Interconnect Map</title>
+<meta name="description" content="How Georgian autonomous systems interconnect with each other and with foreign carriers, rebuilt daily from live BGP and the RIPE database.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0}
+/* Layout: one column; summary strip → full-width network map with side detail panel → foreign-transit bars → sortable entity table → method notes */
+:root{
+  --bg:#f6f7f8; --panel:#ffffff; --ink:#111417; --ink-2:#4b5258; --ink-3:#7c848b; --line:#dde1e5; --line-2:#c7cdd3;
+  --ge:#2a78d6; --t1:#eb6834; --int:#1baf7a; --set:#eda100; --ixc:#e87ba4; --edge:#9aa3ab; --hl:#111417; --crit:#d03b3b;
+  --display:"Archivo","Arial Narrow",system-ui,sans-serif; --body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121518; --panel:#1a1e22; --ink:#eef0f2; --ink-2:#b4bbc2; --ink-3:#848c94; --line:#2b3137; --line-2:#3a4249;
+  --ge:#3987e5; --t1:#d95926; --int:#199e70; --set:#c98500; --ixc:#d55181; --edge:#5d666e; --hl:#eef0f2; --crit:#e66767; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121518; --panel:#1a1e22; --ink:#eef0f2; --ink-2:#b4bbc2; --ink-3:#848c94; --line:#2b3137; --line-2:#3a4249;
+  --ge:#3987e5; --t1:#d95926; --int:#199e70; --set:#c98500; --ixc:#d55181; --edge:#5d666e; --hl:#eef0f2; --crit:#e66767; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5}
+.wrap{max-width:1320px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+h1{font-family:var(--display);font-stretch:80%;font-weight:750;font-size:clamp(28px,4vw,44px);line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-family:var(--display);font-stretch:85%;font-weight:700;font-size:20px;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.lede{color:var(--ink-2);max-width:68ch;margin:8px 0 0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header{display:flex;flex-direction:column;gap:6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.stat{background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.stat b{font-family:var(--display);font-stretch:80%;font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{color:var(--ink-2);font-size:12.5px}
+section{display:flex;flex-direction:column;gap:12px}
+.sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input[type=search],select{font:inherit;font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--line-2);border-radius:4px;padding:6px 9px;min-width:0}
+input[type=search]{width:220px;max-width:100%}
+button{font:inherit;font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--line-2);border-radius:4px;padding:6px 10px;cursor:pointer}
+button:hover{border-color:var(--ink-3)} button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:2px solid var(--ge);outline-offset:2px}
+label.chk{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--ink-2);cursor:pointer}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:12px}
+@media (max-width:900px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.map{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;height:min(78vh,760px);min-height:440px}
+.map svg{width:100%;height:100%;display:block;cursor:grab}
+.legend{position:absolute;left:10px;bottom:10px;background:color-mix(in srgb,var(--panel) 88%,transparent);border:1px solid var(--line);border-radius:4px;padding:8px 10px;display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--ink-2);pointer-events:none}
+.legend div{display:flex;gap:8px;align-items:center}
+.sw{width:11px;height:11px;border-radius:50%;flex:none;border:1.5px solid var(--panel)}
+.sw.sq{border-radius:2px}
+.ln{width:22px;height:0;border-top:1.6px solid var(--edge);flex:none}
+.ln.backup{opacity:.45;border-top-width:1px}.ln.caida{border-top-style:dashed;border-top-color:var(--int)}.ln.manual{border-top-color:var(--set);border-top-width:2.5px}.ln.ix{border-top-color:var(--ixc);border-top-style:dotted}.sw.dia{border-radius:1px;transform:rotate(45deg) scale(.85)}
+.src{font-family:var(--mono);font-size:9.5px;color:var(--ink-3);margin-left:2px}
+.chip.bk{opacity:.7;border-style:dashed}
+.dcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.dcbox{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 16px;min-width:0}
+.dcbox h3{margin:0 0 8px;font-size:14px;font-family:var(--display);font-stretch:85%}
+.dcbox ul{list-style:none;margin:0;padding:0}
+.dcbox li{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px}
+.dcbox li:last-child{border-bottom:none}
+.dcbox li .mono{color:var(--ink-3);font-size:12px;white-space:nowrap}
+.ln.stale{border-top-color:var(--crit);border-top-style:dashed}.ln.grp{border-top:5px solid color-mix(in srgb,var(--ge) 35%,transparent)}
+.ln.dash{border-top-style:dashed}.ln.dot{border-top-style:dotted;border-top-width:2.4px}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);padding:7px 9px;border-radius:4px;font-size:12px;max-width:280px;line-height:1.35;opacity:0;transition:opacity .08s}
+.tip .mono{opacity:.75;font-size:11px}
+.zoombtns{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:4px}
+.zoombtns button{width:30px;height:30px;padding:0;font-size:16px;line-height:1}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;max-height:min(78vh,760px);overflow:auto;min-width:0}
+.panel h3{margin:0;font-family:var(--display);font-stretch:85%;font-size:18px;line-height:1.2;text-wrap:balance}
+.panel .k{font-size:11.5px;color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;font-family:var(--mono)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{text-align:left;display:inline-flex;align-items:center;gap:5px;font-size:12px;border:1px solid var(--line-2);border-radius:999px;padding:1px 8px 1px 6px;cursor:pointer;background:transparent;color:var(--ink)}
+.chip:hover{border-color:var(--ink-3)}
+.chip.stale{opacity:.65;text-decoration:line-through}
+.chip i{width:7px;height:7px;border-radius:50%;flex:none}
+.role{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--ge) 14%,transparent);color:var(--ink)}
+.empty{color:var(--ink-3);font-size:13px}
+.bars{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr) 34px;gap:6px 12px;align-items:center}
+.bars .nm{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bars .nm .mono{color:var(--ink-3);font-size:11.5px;margin-right:6px}
+.bars .track{height:12px;position:relative}
+.bars .bar{height:100%;border-radius:0 4px 4px 0;min-width:2px}
+.bars .v{font-family:var(--mono);font-size:12px;text-align:right;color:var(--ink-2)}
+.bars .row{display:contents;cursor:pointer}
+.bars .row:hover .nm{text-decoration:underline}
+@media (max-width:560px){.bars{grid-template-columns:minmax(0,1fr) 30px}.bars .track{grid-column:1/-1;order:0}}
+.tablewrap{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:1560px}
+th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;color:var(--ink-2);font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;padding:9px 10px;border-bottom:1px solid var(--line-2);cursor:pointer;white-space:nowrap;user-select:none}
+th[aria-sort="ascending"]::after{content:" ▲";font-size:9px}th[aria-sort="descending"]::after{content:" ▼";font-size:9px}
+td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+tbody tr{cursor:pointer} tbody tr:hover{background:color-mix(in srgb,var(--ge) 7%,transparent)}
+tbody tr.sel{background:color-mix(in srgb,var(--ge) 14%,transparent)}
+td .sub{color:var(--ink-3);font-size:11.5px}
+td .lst{color:var(--ink-2);max-width:340px}
+.changes{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 16px;max-height:340px;overflow:auto}
+.changes ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.changes li{display:grid;grid-template-columns:96px 22px minmax(0,1fr);gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}
+.changes li:last-child{border-bottom:none}
+.changes .d{font-family:var(--mono);color:var(--ink-3);font-size:12px}
+.changes .k{font-weight:700;text-align:center}
+.changes .add{color:var(--int)}.changes .rem{color:var(--crit)}
+.notes{color:var(--ink-2);max-width:78ch;font-size:13.5px}
+.notes ul{margin:6px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.toast{font-size:12px;color:var(--ink-3)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Live BGP · RIPEstat route collectors · updated <span id="builtAt">…</span> · <span id="nAsns">…</span> Georgian ASNs</div>
+    <h1>Georgian ASN Interconnect Map</h1>
+    <p class="lede">Who buys transit from whom and which foreign carriers carry Georgian traffic out of the country, as seen in live BGP paths. Links that networks still declare in the RIPE database but that no longer appear in routing are kept as a separate, switchable layer.</p>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <section>
+    <div class="sechead">
+      <h2>Interconnection graph</h2>
+      <div class="controls">
+        <input type="search" id="q" placeholder="Find ASN or name…" aria-label="Find ASN or name">
+        <label class="chk"><input type="checkbox" id="showForeign" checked> Foreign networks</label>
+        <label class="chk"><input type="checkbox" id="hideLeaf"> Hide one-link foreign</label>
+        <label class="chk"><input type="checkbox" id="showStale"> RIPE-only links</label>
+        <label class="chk"><input type="checkbox" id="showIX" checked> Exchanges</label>
+        <select id="sizeBy" aria-label="Size Georgian nodes by"><option value="cust">Size: customers</option><option value="space">Size: IPv4 space</option></select>
+        <button id="reset">Reset view</button>
+      </div>
+    </div>
+    <div class="mapgrid">
+      <div class="map" id="map">
+        <svg id="svg" role="img" aria-label="Force-directed network of Georgian autonomous systems and their foreign neighbours"></svg>
+        <div class="zoombtns"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">−</button></div>
+        <div class="legend">
+          <div><span class="sw" style="background:var(--ge)"></span>Georgian network (size = customers)</div>
+          <div><span class="sw sq" style="background:var(--t1)"></span>Global Tier-1 carrier</div>
+          <div><span class="sw sq" style="background:var(--int)"></span>Other foreign network</div>
+          <div><span class="sw dia" style="background:var(--ixc)"></span>Internet exchange (PeeringDB)</div>
+          <div><span class="ln"></span>Transit, live (arrow → customer)</div>
+          <div><span class="ln dash"></span>Domestic peering</div>
+          <div><span class="ln dot"></span>Mutual transit (sister networks)</div>
+          <div><span class="ln grp"></span>Same corporate group</div>
+          <div><span class="ln backup"></span>Backup / lightly used transit</div>
+          <div><span class="ln caida"></span>Seen by CAIDA only</div>
+          <div><span class="ln manual"></span>Added by hand (confirmed outside BGP)</div>
+          <div><span class="ln ix"></span>Exchange membership</div>
+          <div><span class="ln stale"></span>RIPE-declared, not seen live</div>
+        </div>
+        <div class="tip" id="tip"></div>
+      </div>
+      <aside class="panel" id="panel" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Foreign carriers selling transit into Georgia</h2>
+      <span class="eyebrow">Georgian ASNs with a live transit link to each</span>
+    </div>
+    <div class="bars" id="bars"></div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Exchanges and data centers</h2>
+      <span class="eyebrow">From PeeringDB</span>
+    </div>
+    <div class="dcgrid">
+      <div class="dcbox"><h3>Exchanges with Georgian members</h3><ul id="ixList"><li class="empty">No PeeringDB data yet</li></ul></div>
+      <div class="dcbox"><h3>Data centers in Georgia</h3><ul id="facList"><li class="empty">No PeeringDB data yet</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>Changes</h2>
+      <span class="eyebrow" id="chgWindow">Last 30 days</span>
+    </div>
+    <div class="changes" id="changes"><p class="empty">Loading…</p></div>
+  </section>
+
+  <section>
+    <div class="sechead">
+      <h2>All <span id="nAsns2">…</span> entities</h2>
+      <div class="controls">
+        <input type="search" id="tq" placeholder="Filter table…" aria-label="Filter table">
+        <select id="roleSel" aria-label="Filter by role"><option value="">All roles</option><option value="__off">No Georgian links (connected only abroad)</option></select>
+        <button id="dlCsv">Download CSV</button><button id="copyCsv">Copy as CSV</button><a class="toast" href="data/net.json">Raw JSON</a><span class="toast" id="toast"></span>
+      </div>
+    </div>
+    <div class="tablewrap"><table id="tbl"><thead><tr>
+      <th data-k="id">ASN</th><th data-k="name">Entity</th><th data-k="role">Role</th>
+      <th data-k="nGEup" class="num">GE upstreams</th><th data-k="nFup" class="num">Foreign upstreams</th>
+      <th data-k="nDown" class="num">Customers</th><th data-k="nPeer" class="num">Peers (GE / foreign)</th><th data-k="nBk" class="num">Backup upstreams</th><th data-k="v4" class="num">IPv4 /24s</th><th data-k="nIX" class="num">Exchanges</th>
+      <th data-k="upList">Live upstream providers</th><th data-k="geLinks" class="num">Georgian links</th><th data-k="nStale" class="num">RIPE-only upstreams</th><th data-k="group">Group</th><th data-k="created">Registered</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="notes">
+    <h2>How the relationships were inferred</h2>
+    <ul>
+      <li><b>Source:</b> RIPEstat <span class="mono">asn-neighbours</span>, built from the AS paths seen by RIPE's RIS route collectors. The data is refreshed once a day. A neighbour seen toward the collectors is an upstream; one seen beyond the network is a customer.</li>
+      <li><b>Noise filter:</b> a transit link counts only when at least 20 collector feeds see it and it carries at least 3% of that network's strongest upstream path. Weaker sightings are usually leaks, remote peering or route-server artefacts.</li>
+      <li><b>Second source:</b> CAIDA's monthly AS-relationship file, built from both RIPE RIS and RouteViews collectors. Links confirmed by it are marked "CAIDA" in the details panel; links only CAIDA sees are drawn dashed green.</li>
+      <li><b>Backup links:</b> a weaker live sighting (at least 10 collector feeds) of an upstream the network also declares in RIPE is shown as a backup or lightly used link, not dropped.</li>
+      <li><b>Confirmed changes:</b> a link counts as added or lost only after it holds for two daily runs, so brief routing flaps don't show up as changes. A link missing for one day stays on the map until confirmed gone.</li>
+      <li><b>Exchanges and data centers</b> come from PeeringDB, where networks list themselves. Membership at an exchange shows where a network can peer, not with whom.</li>
+      <li><b>Corrections:</b> links confirmed by operators outside BGP can be added by hand; they are drawn in yellow. Use "Suggest a correction" in the details panel to send one.</li>
+      <li><b>Mutual transit:</b> both networks pass each other's routes onward, as Magticom and Delta Comm do. These are drawn as dotted links and counted as both upstream and customer of each other.</li>
+      <li><b>Peering:</b> only Georgian-to-Georgian peering is drawn. Each network's foreign exchange peers are counted in the table.</li>
+      <li><b>RIPE-only links</b> (<span id="nStale">…</span>) are still declared in the RIPE database but not seen in any live path. Switch them on with "RIPE-only links" to compare.</li>
+      <li><b>Blind spots:</b> collectors see paths that reach the global table. A purely domestic link, for example a private link inside Tbilisi used only for local traffic, can be missing. <span id="nHidden">…</span> networks announce nothing at the moment and are shown faded.</li>
+      <li><b>No Georgian links:</b> <span id="nOff">…</span> networks are registered in Georgia but have no live link to any Georgian network. Some are Georgian organisations behind a foreign protection or hosting service (the National Bank and Liberty Bank via Cloudflare, Europebet via Betsson). Most of the rest were registered in 2025–2026 and buy transit only from European hosting providers, so the network itself runs outside Georgia. Pick "No Georgian links" in the table filter to list them.</li>
+      <li><b>Corporate groups:</b> ASNs registered to the same entity are tied with a thick band, plus groups set by hand in the site's configuration (for example Magticom with Delta Comm).</li>
+    </ul>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+let DATA;
+function main(){
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const N = new Map(DATA.nodes.map(n => [n.id, n]));
+const GRPLBL = {GE:'Georgian', T1:'Tier-1 carrier', INT:'Foreign network', SET:'AS-SET', IX:'Internet exchange'};
+const colorVar = g => ({GE:'--ge', T1:'--t1', INT:'--int', SET:'--set', IX:'--ixc'})[g];
+const deg = new Map(); DATA.edges.forEach(e => { deg.set(e.src,(deg.get(e.src)||0)+1); deg.set(e.dst,(deg.get(e.dst)||0)+1); });
+const ge = DATA.nodes.filter(n => n.grp==='GE' && /^AS\d+$/.test(n.id) && n.role);
+const isForeign = id => { const n=N.get(id); return n && n.grp!=='GE' && n.grp!=='IX'; };
+const srcLbl = {ris:'RIS',caida:'CAIDA',ripe:'RIPE',manual:'manual',peeringdb:'PeeringDB'};
+const edgeOf = (a,b) => DATA.edges.find(e=>!e.stale&&e.type!=='ix'&&e.type!=='group'&&((e.src===a&&e.dst===b)||(e.src===b&&e.dst===a)));
+const short = s => /not in public/.test(s||'') ? '' : (s||'').replace(/\b(LLC|Ltd\.?|LTD|JSC|Limited|Co\.?|Inc\.?|S\.?A\.?|GmbH|B\.V\.|A\.S\.|Anonim Sirketi)\b/g,'').replace(/[ ,.]+$/,'').trim();
+const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ---------- stats ----------
+const transit = DATA.edges.filter(e=>e.type==='transit'&&!e.stale&&!e.backup);
+const foreignIn = transit.filter(e=>isForeign(e.src) && N.get(e.dst)?.grp==='GE');
+const geWithForeign = new Set(foreignIn.map(e=>e.dst));
+const stats = [
+  [ge.filter(n=>n.inbgp).length+' / '+ge.length,'Georgian ASNs visible in BGP'],
+  [transit.length,'Live transit links'],
+  [new Set(foreignIn.map(e=>e.src)).size,'Foreign carriers selling direct'],
+  [geWithForeign.size,'Georgian ASNs with a direct foreign upstream'],
+  [ge.filter(n=>n.offshore).length,'Registered in Georgia, no Georgian links'],
+  [DATA.edges.filter(e=>e.stale).length,'RIPE-declared links not seen live'],
+];
+document.getElementById('stats').innerHTML = stats.map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('');
+
+// ---------- graph ----------
+const svg = d3.select('#svg'), mapEl = document.getElementById('map'), tip = document.getElementById('tip');
+let W = mapEl.clientWidth, H = mapEl.clientHeight;
+const root = svg.append('g');
+const defs = svg.append('defs');
+defs.append('marker').attr('id','arr').attr('viewBox','0 -4 8 8').attr('refX',8).attr('refY',0).attr('markerWidth',5).attr('markerHeight',5).attr('orient','auto')
+  .append('path').attr('d','M0,-4L8,0L0,4').attr('fill','var(--edge)');
+const gLinks = root.append('g'), gNodes = root.append('g'), gLabels = root.append('g');
+const sizeMode = () => document.getElementById('sizeBy').value;
+const radius = n => n.grp==='IX' ? 5 + Math.sqrt((n.members||[]).length)*1.6 : n.grp==='GE' ? (sizeMode()==='space' ? 3.5 + Math.sqrt((n.space||{}).v4_24||0)*0.55 : 4 + Math.sqrt(n.down.length)*2.6) : 3.5 + Math.sqrt(n.down.length)*1.6;
+
+let nodesAll = DATA.nodes.map(n=>({...n}));
+let linksAll = DATA.edges.map(e=>({...e, source:e.src, target:e.dst}));
+let sim, linkSel, nodeSel, labelSel, selected = null;
+const zoom = d3.zoom().scaleExtent([0.2,6]).on('zoom', ev => { root.attr('transform', ev.transform); updateLabels(ev.transform.k); });
+svg.call(zoom);
+
+function visibleSets(){
+  const showF = document.getElementById('showForeign').checked, hideLeaf = document.getElementById('hideLeaf').checked;
+  const showIX = document.getElementById('showIX').checked;
+  const keep = new Set(nodesAll.filter(n => n.grp==='GE' || (n.grp==='IX' ? showIX : (showF && !(hideLeaf && (deg.get(n.id)||0)<2)))).map(n=>n.id));
+  const showS = document.getElementById('showStale').checked;
+  let links = linksAll.filter(l=>keep.has(l.src)&&keep.has(l.dst)&&(showS||!l.stale));
+  const used = new Set(links.flatMap(l=>[l.src,l.dst]));
+  return {nodes: nodesAll.filter(n=>keep.has(n.id) && (n.grp==='GE' || used.has(n.id))), links};
+}
+function build(){
+  const {nodes, links} = visibleSets();
+  if (sim) sim.stop();
+  sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d=>d.id).distance(l => l.type==='group'?22:l.type==='transit'?55:70).strength(l=>l.type==='group'?.9:l.stale?.03:l.type==='ix'?.05:.35))
+    .force('charge', d3.forceManyBody().strength(d => d.grp==='GE' ? -60 - d.down.length*6 : -40))
+    .force('collide', d3.forceCollide(d=>radius(d)+2))
+    .force('r', d3.forceRadial(d => d.grp==='GE' ? Math.min(W,H)*0.16 : d.grp==='IX' ? Math.min(W,H)*0.30 : Math.min(W,H)*0.46, 0, 0).strength(d=>d.grp==='GE'?0.04:0.12))
+    .force('x', d3.forceX(0).strength(.02)).force('y', d3.forceY(0).strength(.02));
+  linkSel = gLinks.selectAll('line').data(links, d=>d.src+'|'+d.dst).join('line')
+    .attr('stroke','var(--edge)').attr('stroke-width', d=>d.type==='transit'?1:1.2)
+    .attr('stroke-dasharray', d=>d.type==='peer'?'4 3':d.type==='mutual'?'1.5 2.5':null)
+    .attr('marker-end', d=>d.type==='transit'&&!d.stale?'url(#arr)':null).attr('stroke-opacity',.55);
+  linkSel.filter(d=>d.stale).attr('stroke-dasharray','5 4');
+  linkSel.filter(d=>d.backup).attr('stroke-width',.8);
+  linkSel.filter(d=>d.caida_only).attr('stroke-dasharray','3 3');
+  linkSel.filter(d=>d.grace).attr('stroke-dasharray','8 4');
+  linkSel.filter(d=>d.type==='ix').attr('stroke-dasharray','1 3').attr('stroke-width',1);
+  linkSel.filter(d=>d.type==='group').attr('stroke-width',6).attr('stroke-dasharray',null).attr('stroke-linecap','round');
+  nodeSel = gNodes.selectAll('path').data(nodes, d=>d.id).join('path')
+    .attr('d', d => d3.symbol(d.grp==='GE'?d3.symbolCircle:d.grp==='IX'?d3.symbolDiamond:d3.symbolSquare, Math.PI*radius(d)**2 * (d.grp==='GE'?1:0.85))())
+    .attr('fill', d=>`var(${colorVar(d.grp)})`).attr('stroke','var(--panel)').attr('stroke-width',1.5).style('cursor','pointer')
+    .on('mouseenter', (ev,d)=>{ hover(d); showTip(ev,d); }).on('mousemove', showTip).on('mouseleave', ()=>{ hover(null); tip.style.opacity=0; })
+    .on('click', (ev,d)=>{ ev.stopPropagation(); select(d.id); })
+    .call(d3.drag().on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(.2).restart(); d.fx=d.x; d.fy=d.y; })
+      .on('drag',(ev,d)=>{ d.fx=ev.x; d.fy=ev.y; }).on('end',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+  const labelled = nodes.filter(n => n.down.length>=3 || (n.grp==='IX' && (n.members||[]).length>=3) || (n.grp!=='GE' && n.grp!=='IX' && (deg.get(n.id)||0)>=3));
+  labelSel = gLabels.selectAll('text').data(labelled, d=>d.id).join('text')
+    .text(d => short(d.name).slice(0,22) || d.id).attr('font-size', d=> d.grp==='GE' ? 10 + Math.min(4, d.down.length/25) : 9.5)
+    .attr('font-family','var(--body)').attr('font-weight', d=>d.grp==='GE'?600:500).attr('fill','var(--ink)')
+    .attr('paint-order','stroke').attr('stroke','var(--panel)').attr('stroke-width',3).attr('pointer-events','none').attr('text-anchor','middle');
+  sim.on('tick', () => {
+    linkSel.each(function(d){ const dx=d.target.x-d.source.x, dy=d.target.y-d.source.y, L=Math.hypot(dx,dy)||1, r=radius(d.target)+2;
+      this.setAttribute('x1',d.source.x); this.setAttribute('y1',d.source.y); this.setAttribute('x2',d.target.x-dx/L*r); this.setAttribute('y2',d.target.y-dy/L*r); });
+    nodeSel.attr('transform', d=>`translate(${d.x},${d.y})`);
+    labelSel.attr('x', d=>d.x).attr('y', d=>d.y - radius(d) - 4);
+  });
+  for (let i=0;i<220;i++) sim.tick();
+  sim.alpha(.05).restart();
+  applyHighlight();
+}
+function updateLabels(k){ if(labelSel) labelSel.attr('opacity', d => (d.down.length>=10 || k>1.3 || (d.grp!=='GE'&&(deg.get(d.id)||0)>=5)) ? 1 : 0); }
+function fit(){ W = mapEl.clientWidth; H = mapEl.clientHeight; const ns = nodeSel.data(); const xs = ns.map(d=>d.x), ys = ns.map(d=>d.y); const x0=Math.min(...xs)-30,x1=Math.max(...xs)+30,y0=Math.min(...ys)-30,y1=Math.max(...ys)+30; const k=0.9*Math.min(W/(x1-x0),H/(y1-y0),1.6); svg.call(zoom.transform, d3.zoomIdentity.translate(W/2-k*(x0+x1)/2,H/2-k*(y0+y1)/2).scale(k)); }
+let hovered = null;
+function nbrs(id){ const s = new Set([id]); const showS=document.getElementById('showStale').checked; linksAll.forEach(l=>{ if(l.stale&&!showS) return; if(l.src===id) s.add(l.dst); if(l.dst===id) s.add(l.src); }); return s; }
+function hover(d){ hovered = d ? d.id : null; applyHighlight(); }
+function applyHighlight(){
+  const focus = hovered || selected;
+  const base = d => d.type==='group' ? 'color-mix(in srgb,var(--ge) 35%,transparent)' : d.stale ? 'var(--crit)' : d.type==='ix' ? 'var(--ixc)' : d.manual ? 'var(--set)' : d.caida_only ? 'var(--int)' : 'var(--edge)';
+  if (!focus){ nodeSel.attr('opacity',d=>d.grp==='GE'&&d.inbgp===false?.35:1); linkSel.attr('stroke-opacity',d=>d.stale?.3:d.type==='ix'?.3:d.backup?.3:.5).attr('stroke',base); labelSel.attr('opacity',null); updateLabels(d3.zoomTransform(svg.node()).k); return; }
+  const s = nbrs(focus);
+  nodeSel.attr('opacity', d => s.has(d.id)?1:.12);
+  linkSel.attr('stroke-opacity', d => (d.src===focus||d.dst===focus)?.95:.05).attr('stroke', d => (d.src===focus||d.dst===focus) ? (d.stale||d.type==='group'||d.type==='ix'||d.manual ? base(d) : 'var(--hl)') : 'var(--edge)');
+  labelSel.attr('opacity', d => s.has(d.id)?1:0);
+}
+function showTip(ev,d){
+  const r = mapEl.getBoundingClientRect();
+  tip.innerHTML = `<b>${esc(d.name||d.id)}</b><br><span class="mono">${d.id}${d.cc?' · '+d.cc:''}</span><br>${d.grp==='GE' ? esc(d.role||'') + '<br>' : GRPLBL[d.grp]+'<br>'}${d.inbgp===false?'Not visible in BGP<br>':''}${d.grp==='IX' ? (d.members||[]).length+' Georgian members'+(d.city?' · '+esc(d.city):'') : `${d.up.length} upstream · ${d.down.length} customers · ${d.peers.length} peers/mutual`}`;
+  let x = ev.clientX - r.left + 14, y = ev.clientY - r.top + 14;
+  if (x > r.width - 290) x -= 300; if (y > r.height - 90) y -= 100;
+  tip.style.left = x+'px'; tip.style.top = y+'px'; tip.style.opacity = 1;
+}
+function chip(id,cls='',note=''){ const n = N.get(id)||{id,name:id,grp:'INT'}; return `<button class="chip ${cls}" data-id="${esc(id)}" title="${esc(id)}${note?' · '+esc(note):''}"><i style="background:var(${colorVar(n.grp)})"></i>${esc(short(n.name)||id)} <span class="mono" style="color:var(--ink-3);font-size:10.5px">${esc(id.replace('SET:','').replace('IX:','IX '))}</span>${note?`<span class="src">${esc(note)}</span>`:''}</button>`; }
+function linkChip(self, other, cls=''){ const e = edgeOf(self, other); const s = e ? (e.sources||[]).map(x=>srcLbl[x]||x).join('+') + (e.grace?' · not seen today':'') + (e.pending?' · new, unconfirmed':'') : ''; return chip(other, cls, s); }
+function panel(id){
+  const p = document.getElementById('panel');
+  if (!id){ p.innerHTML = `<div class="k">Details</div><p class="empty">Click any node, table row or bar to see its upstreams, customers and peers. Hover to highlight direct links. Drag to rearrange; scroll or pinch to zoom.</p>
+    <div class="k">Biggest Georgian transit hubs</div><div class="chips">${ge.slice().sort((a,b)=>b.down.length-a.down.length).slice(0,10).map(n=>chip(n.id)).join('')}</div>`; return; }
+  let n = N.get(id);
+  if (!n && id.startsWith('IX:')){ const x = (DATA.meta.exchanges||[]).find(e=>'IX:'+e.id===id); if (x) n = {id, name:x.name, grp:'IX', cc:x.cc, city:x.city, members:x.members, up:[], down:[], peers:[]}; }
+  if (!n){ panel(null); return; }
+  const pol = DATA.edges.filter(e=>(e.src===id||e.dst===id)&&e.policy&&Object.keys(e.policy).length);
+  const sec = (t, arr) => `<div class="k">${t} (${arr.length})</div>${arr.length?`<div class="chips">${arr.map(o=>linkChip(id,o)).join('')}</div>`:'<div class="empty">None declared</div>'}`;
+  if (n.grp==='IX'){ p.innerHTML = `<div><div class="mono" style="color:var(--ink-3)">PeeringDB ${esc(id.slice(3))}${n.cc?' · '+n.cc:''}</div><h3>${esc(n.name)}</h3></div><div><span class="role">Internet exchange${n.city?' · '+esc(n.city):''}</span></div>
+    <div class="k">Georgian members (${(n.members||[]).length})</div><div class="chips">${(n.members||[]).map(m=>chip(m)).join('')}</div>
+    <a href="https://www.peeringdb.com/ix/${esc(id.slice(3))}" target="_blank" rel="noopener">Open in PeeringDB ↗</a><button id="clearSel">Clear selection</button>`;
+    document.getElementById('clearSel').onclick = ()=>select(null); return; }
+  const fix = DATA.meta.repo ? `${DATA.meta.repo.replace(/\/$/,'')}/issues/new?title=${encodeURIComponent('Correction: '+id+' '+(n.name||''))}&body=${encodeURIComponent('Network: '+id+' ('+(n.name||'')+')\n\nWhat is wrong or missing:\n\nHow you know (operator, contract, traceroute…):\n')}` : '';
+  const sp = n.space||{};
+  p.innerHTML = `<div><div class="mono" style="color:var(--ink-3)">${esc(id)}${n.as_name?' · '+esc(n.as_name):''}${n.cc?' · '+n.cc:''}</div><h3>${esc(n.name||id)}</h3></div>
+    <div><span class="role">${esc(n.grp==='GE'?n.role:GRPLBL[n.grp])}</span>${n.created&&!n.created.startsWith('1970')?` <span class="mono" style="color:var(--ink-3);font-size:11.5px">since ${n.created.slice(0,4)}</span>`:''}</div>
+    ${n.inbgp===false?'<div class="k" style="color:var(--crit)">Not visible in live BGP: announces no routes right now</div>':''}
+    ${n.offshore?'<div class="k" style="color:var(--crit)">No live link to any Georgian network: connected only abroad</div>':''}
+    ${n.group?`<div class="k">Corporate group · ${esc(n.group)}</div><div class="chips">${n.siblings.map(x=>chip(x)).join('')}</div>`:''}
+    ${sp.v4_24!==undefined?`<div class="k">Announced space: ${sp.v4_24.toLocaleString()} IPv4 /24s${sp.v6_48?' · '+sp.v6_48.toLocaleString()+' IPv6 /48s':''}</div>`:''}
+    ${n.pdb?`<div class="k">PeeringDB: ${esc(n.pdb.type||'listed')}${n.pdb.website?` · <a href="${esc(n.pdb.website)}" target="_blank" rel="noopener">website ↗</a>`:''} · <a href="https://www.peeringdb.com/net/${esc(n.pdb.id)}" target="_blank" rel="noopener">profile ↗</a></div>`:''}
+    ${sec('Live upstream providers', n.up)}
+    ${(n.backup_up||[]).length?`<div class="k">Backup / lightly used upstreams (${n.backup_up.length})</div><div class="chips">${n.backup_up.map(o=>chip(o,'bk')).join('')}</div>`:''}
+    ${(n.mutual||[]).length?sec('Mutual transit (sister network)', n.mutual):''}
+    ${n.stale_up&&n.stale_up.length?`<div class="k">Upstreams in RIPE but not seen live (${n.stale_up.length})</div><div class="chips">${n.stale_up.map(id=>chip(id,'stale')).join('')}</div>`:''}
+    ${sec('Live customers', n.down)}${sec('Domestic peers', n.peers.filter(p=>!(n.mutual||[]).includes(p)))}
+    ${n.foreign_peers?`<div class="k">Foreign peers at exchanges: ${n.foreign_peers}</div>`:''}
+    ${(n.all_ixs||[]).length?`<div class="k">Exchanges (${n.all_ixs.length})</div><div class="chips">${n.all_ixs.map(x=>`<button class="chip" data-id="IX:${x.id}"><i style="background:var(--ixc)"></i>${esc(x.name)}<span class="src">${x.speed?(x.speed>=1000?x.speed/1000+'G':x.speed+'M'):''}</span></button>`).join('')}</div>`:''}
+    ${(n.facs||[]).length?`<div class="k">Data centers (${n.facs.length})</div><div style="font-size:12.5px;color:var(--ink-2)">${n.facs.map(f=>esc(f.name)+(f.city?' <span class="mono" style="color:var(--ink-3)">'+esc(f.city)+'</span>':'')).join('<br>')}</div>`:''}
+    ${fix?`<a href="${fix}" target="_blank" rel="noopener">Suggest a correction ↗</a>`:''}
+    <details><summary class="k" style="cursor:pointer">RIPE policy lines (${pol.length})</summary><div style="font-family:var(--mono);font-size:11px;color:var(--ink-2);display:flex;flex-direction:column;gap:6px;margin-top:6px">${pol.map(e=>Object.entries(e.policy).map(([by,v])=>`<div><b>${esc(by)}</b> ↔ ${esc(by===e.src?e.dst:e.src)}<br>import: ${esc(v.i||'–')}<br>export: ${esc(v.e||'–')}</div>`).join('')).join('')}</div></details>
+    <button id="clearSel">Clear selection</button>`;
+  document.getElementById('clearSel').onclick = ()=>select(null);
+}
+document.getElementById('panel').addEventListener('click', ev => { const c = ev.target.closest('.chip'); if (c) select(c.dataset.id); });
+function select(id, pan=true){
+  selected = id; panel(id); applyHighlight();
+  document.querySelectorAll('#tbl tbody tr').forEach(tr=>tr.classList.toggle('sel', tr.dataset.id===id));
+  if (id && pan){ const d = nodeSel.data().find(x=>x.id===id); if (d){ const k = Math.max(1.2, d3.zoomTransform(svg.node()).k); svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(W/2 - d.x*k, H/2 - d.y*k).scale(k)); } }
+}
+svg.on('click', ()=>select(null));
+document.getElementById('zin').onclick = ()=>svg.transition().call(zoom.scaleBy,1.4);
+document.getElementById('zout').onclick = ()=>svg.transition().call(zoom.scaleBy,1/1.4);
+document.getElementById('reset').onclick = ()=>{ select(null); fit(); };
+['showForeign','hideLeaf','showStale','showIX','sizeBy'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{ build(); }));
+document.getElementById('q').addEventListener('keydown', ev => {
+  if (ev.key!=='Enter') return; const q = ev.target.value.trim().toLowerCase(); if(!q) return;
+  const hit = DATA.nodes.find(n=>n.id.toLowerCase()===q || n.id.toLowerCase()==='as'+q) || DATA.nodes.find(n=>(n.name||'').toLowerCase().includes(q));
+  if (hit) select(hit.id);
+});
+
+// ---------- foreign bars ----------
+(function(){
+  const cnt = d3.rollup(foreignIn, v=>v.length, e=>e.src);
+  const rows = [...cnt].sort((a,b)=>b[1]-a[1]).slice(0,20);
+  const max = rows[0][1];
+  document.getElementById('bars').innerHTML = rows.map(([id,v])=>{ const n=N.get(id); return `<div class="row" data-id="${id}" tabindex="0"><div class="nm" title="${esc(n.name)}"><span class="mono">${id}</span>${esc(short(n.name)||'Unknown')}${n.cc?` <span class="mono">${n.cc}</span>`:''}</div><div class="track"><div class="bar" style="width:${v/max*100}%;background:var(${colorVar(n.grp)})"></div></div><div class="v">${v}</div></div>`; }).join('');
+  document.getElementById('bars').addEventListener('click', ev=>{ const r = ev.target.closest('.row'); if (r){ select(r.dataset.id); document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'}); } });
+})();
+
+// ---------- csv ----------
+function csvLines(){
+  const cols = ['ASN','Entity','Group','Role','Visible in BGP','Georgian links','GE upstreams','Foreign upstreams','Customers','Domestic peers','Foreign peers','Backup upstreams','IPv4 /24s','IPv6 /48s','Exchanges','Data centers','PeeringDB type','Live upstream ASNs','Backup upstream ASNs','Customer ASNs','Mutual/peer ASNs','RIPE-only upstream ASNs','Registered'];
+  const q = v => '"'+String(v).replace(/"/g,'""')+'"';
+  return [cols.join(',')].concat(ge.map(n=>[n.id,n.name,n.group||'',n.role,n.inbgp?'yes':'no',n.inbgp?n.ge_links:'',n.up.filter(u=>!isForeign(u)).length,n.up.filter(isForeign).length,n.down.length,n.peers.length,n.foreign_peers||0,(n.backup_up||[]).length,(n.space||{}).v4_24??'',(n.space||{}).v6_48??'',(n.all_ixs||[]).map(x=>x.name).join('; '),(n.facs||[]).map(f=>f.name).join('; '),(n.pdb||{}).type||'',n.up.join(' '),(n.backup_up||[]).join(' '),n.down.join(' '),n.peers.join(' '),(n.stale_up||[]).join(' '),n.created||''].map(q).join(',')));
+}
+
+// ---------- exchanges & data centers ----------
+(function(){
+  const ixs = DATA.meta.exchanges||[], facs = DATA.meta.facilities||[];
+  if (ixs.length) document.getElementById('ixList').innerHTML = ixs.slice(0,15).map(x=>`<li><a href="#" data-ix="IX:${x.id}">${esc(x.name)}</a><span class="mono">${esc(x.city||'')}${x.cc?' '+x.cc:''} · ${x.members.length} GE</span></li>`).join('');
+  if (facs.length) document.getElementById('facList').innerHTML = facs.slice(0,15).map(f=>`<li><span>${esc(f.name)}</span><span class="mono">${esc(f.city||'')} · ${f.members.length} networks</span></li>`).join('');
+  document.getElementById('ixList').addEventListener('click', ev=>{ const a = ev.target.closest('a[data-ix]'); if (!a) return; ev.preventDefault(); select(a.dataset.ix); document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'}); });
+})();
+
+// ---------- table ----------
+const rows = ge.map(n=>({ id:n.id, name:n.name, role:n.role, created:n.created||'',
+  nGEup:n.up.filter(u=>!isForeign(u)).length, nFup:n.up.filter(isForeign).length, nDown:n.down.length, nPeer:n.peers.length, nFP:n.foreign_peers||0, nBk:(n.backup_up||[]).length, v4:(n.space||{}).v4_24??-1, nIX:(n.all_ixs||[]).length, nStale:(n.stale_up||[]).length, geLinks:n.inbgp?n.ge_links:-1, group:n.group||'',
+  upList:n.up.map(u=>short(N.get(u)?.name)||u).join(', ') }));
+const roles = [...new Set(rows.map(r=>r.role))].sort();
+document.getElementById('roleSel').insertAdjacentHTML('beforeend', roles.map(r=>`<option>${esc(r)}</option>`).join(''));
+let sortK='nDown', sortDir=-1;
+function renderTable(){
+  const q = document.getElementById('tq').value.trim().toLowerCase(), rf = document.getElementById('roleSel').value;
+  const list = rows.filter(r => (!rf || r.role===rf || (rf==='__off' && r.geLinks===0)) && (!q || (r.id+' '+r.name+' '+r.upList).toLowerCase().includes(q)))
+    .sort((a,b)=>{ const x=a[sortK], y=b[sortK]; return (typeof x==='number' ? x-y : String(x).localeCompare(String(y), undefined, {numeric:true})) * sortDir; });
+  document.querySelector('#tbl tbody').innerHTML = list.map(r=>`<tr data-id="${r.id}" class="${r.id===selected?'sel':''}"><td class="mono">${r.id}</td><td>${esc(r.name)}</td><td><span class="sub">${esc(r.role)}</span></td>
+    <td class="num">${r.nGEup}</td><td class="num">${r.nFup}</td><td class="num">${r.nDown}</td><td class="num">${r.nPeer} / ${r.nFP}</td><td class="num">${r.nBk||''}</td><td class="num">${r.v4<0?'–':r.v4.toLocaleString()}</td><td class="num">${r.nIX||''}</td><td><div class="lst">${esc(r.upList)||'<span class="sub">none</span>'}</div></td><td class="num" style="${r.geLinks===0?'color:var(--crit);font-weight:600':''}">${r.geLinks<0?'–':r.geLinks}</td><td class="num">${r.nStale||''}</td><td><span class="sub">${esc(r.group)}</span></td><td class="mono sub">${r.created}</td></tr>`).join('');
+  document.querySelectorAll('#tbl th').forEach(th=>th.setAttribute('aria-sort', th.dataset.k===sortK ? (sortDir>0?'ascending':'descending') : 'none'));
+}
+document.querySelectorAll('#tbl th').forEach(th=>th.addEventListener('click',()=>{ const k=th.dataset.k; sortDir = (k===sortK) ? -sortDir : (['id','name','role','upList','created','group'].includes(k)?1:-1); sortK=k; renderTable(); }));
+document.getElementById('tq').addEventListener('input', renderTable); document.getElementById('roleSel').addEventListener('change', renderTable);
+document.querySelector('#tbl tbody').addEventListener('click', ev=>{ const tr = ev.target.closest('tr'); if (tr){ select(tr.dataset.id); document.getElementById('map').scrollIntoView({behavior:'smooth',block:'center'}); } });
+document.getElementById('copyCsv').onclick = async () => {
+  const lines = csvLines();
+  const t = document.getElementById('toast');
+  try { await navigator.clipboard.writeText(lines.join('\n')); t.textContent = 'Copied '+(lines.length-1)+' rows'; }
+  catch(e){ const ta=document.createElement('textarea'); ta.value=lines.join('\n'); document.body.appendChild(ta); ta.select(); t.textContent='Press Ctrl+C to copy'; setTimeout(()=>ta.remove(),8000); }
+};
+
+panel(null); renderTable(); build(); fit();
+window.addEventListener('resize', ()=>{ W = mapEl.clientWidth; H = mapEl.clientHeight; });
+
+document.getElementById('builtAt').textContent = DATA.meta.built;
+['nAsns','nAsns2'].forEach(id=>document.getElementById(id).textContent = ge.length);
+document.getElementById('nStale').textContent = DATA.edges.filter(e=>e.stale).length;
+document.getElementById('nHidden').textContent = ge.filter(n=>!n.inbgp).length;
+document.getElementById('nOff').textContent = ge.filter(n=>n.offshore).length;
+document.getElementById('dlCsv').onclick = () => {
+  const lines = csvLines();
+  const blob = new Blob(['\ufeff'+lines.join('\r\n')], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'georgian-asn-map-'+DATA.meta.date+'.csv'; document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(a.href); a.remove();}, 1000);
+};
+}
+function loadChanges(){
+  fetch('data/changes.json',{cache:'no-cache'}).then(r=>r.json()).then(c=>{
+    const el = document.getElementById('changes');
+    document.getElementById('chgWindow').textContent = 'Last '+c.window_days+' days';
+    if (!c.recent || !c.recent.length){ el.innerHTML = '<p class="empty">No changes detected in this period. The first daily run only sets a baseline.</p>'; return; }
+    const sym = {link_added:['+','add'],link_removed:['−','rem'],asn_new:['+','add'],asn_up:['↑','add'],asn_down:['↓','rem']};
+    el.innerHTML = '<ul>'+c.recent.map(i=>{ const s = sym[i.kind]||['·','']; return `<li><span class="d">${i.date}</span><span class="k ${s[1]}" aria-hidden="true">${s[0]}</span><span>${String(i.text).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]))}</span></li>`; }).join('')+'</ul>';
+  }).catch(()=>{ document.getElementById('changes').innerHTML = '<p class="empty">Change log not available yet.</p>'; });
+}
+fetch('data/net.json',{cache:'no-cache'}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d=>{ DATA = d; main(); loadChanges(); })
+  .catch(e=>{ document.getElementById('stats').innerHTML = '<div class="stat"><b>!</b><span>Could not load data/net.json ('+e.message+'). Run the daily job once, or check the file path.</span></div>'; });
+</script>
+</body>
+</html>

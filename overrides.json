@@ -1,0 +1,21 @@
+{
+  "_help": "Links confirmed outside BGP (operator, contract, traceroute). 'add' draws a link in yellow; 'hide' removes a wrong one. Types: transit (src sells to dst), peer, mutual.",
+  "add": [],
+  "hide": [],
+  "_example": {
+    "add": [
+      {
+        "src": "AS20771",
+        "dst": "AS41877",
+        "type": "transit",
+        "note": "Railway Telecom is owned by Caucasus Online"
+      }
+    ],
+    "hide": [
+      {
+        "src": "AS12345",
+        "dst": "AS23456"
+      }
+    ]
+  }
+}

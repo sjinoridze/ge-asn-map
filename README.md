@@ -75,6 +75,31 @@ and that `python3` is available (`python3 --version` in the cron command).
 If `site/` is a copy rather than a symlink, add `&& cp site/data/*.json /home/USER/public_html/asnmap/data/`
 to the end of `run_daily.sh`.
 
+## Data sources and quality controls
+
+| Layer | Source | Refresh |
+|---|---|---|
+| Live links (main) | RIPEstat `asn-neighbours` (RIPE RIS collectors) | daily |
+| Second opinion | CAIDA AS relationships (RIS + RouteViews) | monthly file, checked daily |
+| Declared policy | RIPE database `aut-num` objects | daily |
+| Exchanges, data centers | PeeringDB | daily |
+| Address space (node size) | RIPEstat `routing-status` | daily |
+| Corrections | `config/overrides.json` (by hand) | on commit |
+
+- **Confirmed changes:** a link is reported as added or lost only after it holds for
+  `confirm_runs` daily runs (default 2). A link missing for one day stays on the map, drawn dashed.
+  State lives in `history/linkstate.json`.
+- **Backup links:** a weaker live sighting (≥ `min_backup_power` collector feeds) of an upstream
+  that the network also declares in RIPE is shown as a thin "backup" link.
+- **Sources per link:** each link lists which sources support it (RIS, CAIDA, RIPE, manual);
+  the details panel shows them next to each neighbour.
+- **Corrections:** add links confirmed by operators to `config/overrides.json` (`add`), or remove a
+  wrong one (`hide`). The "Suggest a correction" link in the details panel opens a GitHub issue
+  (Issues must be enabled in the repository settings).
+- **PeeringDB API key (optional):** anonymous access is rate-limited. If PeeringDB data comes back
+  incomplete in the log, create a free key at peeringdb.com (Profile → API keys) and add it as a
+  repository secret named `PEERINGDB_API_KEY` (Settings → Secrets and variables → Actions).
+
 ## What the daily job does
 
 1. **ASN list.** Asks RIPEstat for every ASN registered in Georgia and merges it with
