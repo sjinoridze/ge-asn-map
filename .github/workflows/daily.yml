@@ -28,6 +28,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Fetch RIPE data and rebuild
+        run: |
         python3 pipeline/fetch.py
         python3 pipeline/build.py
       - name: Commit refreshed data
