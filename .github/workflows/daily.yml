@@ -1,0 +1,56 @@
+name: Daily refresh and publish
+
+on:
+  schedule:
+    - cron: "17 1 * * *"     # 01:17 UTC = 05:17 Tbilisi, every day
+  workflow_dispatch:          # "Run workflow" button for a manual refresh
+  push:
+    branches: [main]
+    paths: ["site/**"]        # republish when you edit the page itself
+
+permissions:
+  contents: write             # commit refreshed data back to the repo
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch RIPE data and rebuild
+        run: ./run_daily.sh
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "asn-map-bot"
+          git config user.email "asn-map-bot@users.noreply.github.com"
+          git add site/data history
+          git diff --cached --quiet || git commit -m "Daily data refresh $(date -u +%F)"
+          git push
+
+  deploy:
+    needs: [refresh]
+    if: always() && (needs.refresh.result == 'success' || needs.refresh.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

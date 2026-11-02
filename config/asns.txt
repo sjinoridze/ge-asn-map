@@ -1,0 +1,176 @@
+AS42896	TOV NPF ACS group Autonomous system, GE
+AS57814	Cloud 9 Ltd., GE
+AS203448	Telecom 1 LLC, GE
+AS199899	GEOCOM LLC, GE
+AS212803	Orbi Group 10 LTD, GE
+AS219096	HOSDEX LLC, GE
+AS203136	LLC Ordunet, GE
+AS210234	City Net LLC, GE
+AS49129	CGC Co Ltd, GE
+AS200488	LLC Tegeta Motors, GE
+AS210808	VGS Network LLC, GE
+AS214176	PC MAX LLC, GE
+AS59503	LEPL Digital Governance Agency, GE
+AS201174	Tbilisi City Hall, GE
+AS41877	Railway Telecom, Ltd, GE
+AS207640	Expert Solutions Georgia LLC, GE
+AS199595	GTELCOM LLC, GE
+AS218656	Oko.Labs LLC, GE
+AS15491	JSC Silknet, GE
+AS209786	Delta Consulting LLC, GE
+AS200883	LEPL Levan Samkharauli National Forensics Bureau, GE
+AS198150	SIACOM JSC, GE
+AS204498	UGT LLC, GE
+AS208883	State Audit Office of Georgia, GE
+AS218687	Vsem Network LLC, GE
+AS209000	Connect2 LLC, GE
+AS29289	Georgian Technical University, GE
+AS21214	Geonet Ltd., GE
+AS197229	Connect Ltd., GE
+AS210797	LukNet Ltd, GE
+AS198874	JSC Liberty Bank, GE
+AS49297	Cloud 9 Ltd., GE
+AS197335	Artem Zubkov, GE
+AS210850	SysNet LLC, GE
+AS49016	JSC Georgian State Electrosystem, GE
+AS43715	LLC Skytel, GE
+AS205928	Evex Hospitals JSC, GE
+AS216463	GREENTV LLC, GE
+AS210580	Internet Exchange Association of Georgia, GE
+AS218574	Primenet LLC, GE
+AS35805	JSC Silknet, GE
+AS39452	Myphone LLC, GE
+AS199625	Netcom LLC, GE
+AS41738	Cellfie Mobile LLC, GE
+AS218680	Lite Digital LLC, GE
+AS212319	Tech Solutions LLC, GE
+AS51010	National Agency of Public Registry, GE
+AS57445	Administration of the President of Georgia, GE
+AS197328	GEOCOM LLC, GE
+AS198512	JSC United Financial Corporation UFC, GE
+AS218688	WULDI LLC, GE
+AS203301	Cloud 9 Ltd., GE
+AS208943	Full House LLC, GE
+AS214158	Unicell Mobile LLC, GE
+AS35076	LLC Service, GE
+AS20545	Georgian Research and Educational Networking Association GRENA, GE
+AS214901	LLC Nic Sepehr, GE
+AS57743	GreenNetworks LLC, GE
+AS9144	Europebet LLC, GE
+AS42082	JSC Silknet, GE
+AS34666	JSC Global Erty, GE
+AS212484	SmartITUP LLC, GE
+AS56811	National Bank of Georgia, GE
+AS208144	PASHA Bank Georgia JSC, GE
+AS201141	JSC Insurance Company Aldagi, GE
+AS213760	Folinknet LLC, GE
+AS199242	Malakmadze Web LLC, GE
+AS207573	Metro Servis LLC, GE
+AS205143	Cloud 9 Ltd., GE
+AS42140	New Georgia LLC, GE
+AS202223	Odrex Software LLC, GE
+AS24997	Caucasus Digital Network LTD, GE
+AS215647	Asia Net LLC, GE
+AS203962	JSC ProCredit Bank, GE
+AS47810	Proservice LLC, GE
+AS41161	Artem Zubkov, GE
+AS20771	Caucasus Online Ltd., GE
+AS207877	Safebeat LLC, GE
+AS47644	JSC TBC BANK, GE
+AS212398	Ministry of Environmental Protection and Agriculture of Georgia, GE
+AS208603	Real Estate of Georgia JSC, GE
+AS209047	JSC Risk Management and Insurance Company Global Benefits Georgia, GE
+AS201575	TradeZone LLC, GE
+AS50647	Georgian Water and Power LLC, GE
+AS25249	Magticom Ltd., GE
+AS203647	TradeZone LLC, GE
+AS202065	Alliance Global Net Ltd, GE
+AS210923	LTD NETSERVICE, GE
+AS209263	Jenet LLC, GE
+AS215348	Gonet LLC Tbilisi, Georgia, GE
+AS214049	Netera LLC, GE
+AS211981	Argonet LLC, GE
+AS206534	AB Georgia LLC, GE
+AS51142	LLC Ekspres Netvork, GE
+AS57473	Education Managment Information System EMIS, GE
+AS199469	AIRNET LLC, GE
+AS214015	HALYK BANK GEORGIA JSC, GE
+AS208320	AIRMAX LLC, GE
+AS216300	Closed Joint Stock Company AbkhazMedia, GE
+AS50151	Easterra LLC, GE
+AS215546	Telecom 1 LLC, GE
+AS47575	Ivane Javakhishvili Tbilisi State University, GE
+AS58227	Cartu Bank JSC., GE
+AS209332	High Council of Justice of Georgia LEPL DEPARTMENT OF COMMON COURTS, GE
+AS206584	Georgian Post LTD, GE
+AS47270	GL 21 LLC, GE
+AS209663	iLink Ltd, GE
+AS209012	MULTISOFT LLC, GE
+AS215463	JSC Insurance Company GPI Holding, GE
+AS61167	LEPL Digital Governance Agency, GE
+AS208744	UGT LLC, GE
+AS201356	JSC VTB Bank Georgia, GE
+AS199045	LTD Sky Net, GE
+AS57127	Internet Exchange Association of Georgia, GE
+AS201651	Superbet 2014, Ltd, GE
+AS200476	Tech Solutions LLC, GE
+AS48415	JSC Georgian Card, GE
+AS208097	Money Movers LLC, GE
+AS59447	GEOCOM LLC, GE
+AS209183	AkhaliNet LLC, GE
+AS51841	JSC MFI IntelExpress, GE
+AS56855	MIA of Georgia, GE
+AS210824	SmartNet LLC, GE
+AS60392	RETN GE LLC, GE
+AS206527	METRONET LLC, GE
+AS198561	Legal Entity Under Public Law Financial Analytical Service, GE
+AS201881	JSC Telasi, GE
+AS39248	Artem Zubkov, GE
+AS44621	PE Maxim Lysenko, GE
+AS205901	Evgenii Diakov, GE
+AS42223	LLC MARS, GE
+AS199872	JSC Wissol Petroleum Georgia, GE
+AS44327	Delta Comm LLC, GE
+AS200823	MHost LLC, GE
+AS215952	LLC TNET, GE
+AS48393	JSCB Bank of Georgia, GE
+AS16010	Magticom Ltd., GE
+AS211322	GENET LTD, GE
+AS212318	Tech Solutions LLC, GE
+AS49628	LLC Skytel, GE
+AS197666	STENCLOUD LLC, GE
+AS51481	LLC Skytel, GE
+AS218322	Vsem Network LLC, GE
+AS42938	LLC Gudauta net, GE
+AS28751	Caucasus Online Ltd., GE
+AS203039	Cavea Plus LLC, GE
+AS211426	Silk Bank JSC, GE
+AS48538	GEOCOM LLC, GE
+AS202544	Sigma D LLC, GE
+AS207057	Murtazali Ustarov trading as Alius, GE
+AS203310	Ministry of Internal Affairs, GE
+AS209064	Ministry of Internally Displaced Persons from the Occupied Territories Labor Health and Social Affairs of Georgia, GE
+AS58185	Ministry of Justice of Georgia, GE
+AS213520	Senko Digital LLC, GE
+AS205089	Alfahost LLC, GE
+AS21276	Expert Solutions Georgia LLC, GE
+AS49254	Alternet Ltd, GE
+AS207359	Tochka Network LLC, GE
+AS57768	LLC Skytel, GE
+AS204524	Scientific Technical Association Interoptica LLC, GE
+AS62252	JSC Terabank, GE
+AS208080	Tbilisi Energy LLC, GE
+AS200568	LEPL Digital Governance Agency, GE
+AS50514	Cavea Plus LLC, GE
+AS215594	TradeZone LLC, GE
+AS219010	Prosto Solution LLC, GE
+AS201598	LLC Aversi Pharma, GE
+AS212345	Tech Solutions LLC, GE
+AS56966	Foodservice LTD, GE
+AS57881	JSC ENERGO PRO Georgia, GE
+AS205173	JSC Georgian Railway, GE
+AS212599	Telecom 1 LLC, GE
+AS34797	System Net Ltd, GE
+AS205797	Credo Bank JSC, GE
+AS209046	Georgianairlink LLC, GE
+AS209743	Enbinet Ltd., GE
