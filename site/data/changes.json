@@ -1,29 +1,10 @@
 {
- "built": "2026-11-02 14:27 UTC",
+ "built": "2026-11-02 14:57 UTC",
  "window_days": 30,
  "last_run": {
   "date": "2026-11-02",
-  "since": "2026-10-31",
-  "items": [
-   {
-    "kind": "link_added",
-    "src": "AS35805",
-    "dst": "AS200568",
-    "text": "LEPL Digital Governance Agency (AS200568) now takes transit from JSC Silknet (AS35805)"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS49628",
-    "dst": "AS57445",
-    "text": "Administration of the President of Georgia (AS57445) now takes transit from LLC Skytel (AS49628)"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS214176",
-    "dst": "AS215348",
-    "text": "Gonet LLC Tbilisi, Georgia (AS215348) no longer seen taking transit from PC MAX LLC (AS214176)"
-   }
-  ]
+  "since": "2026-11-02",
+  "items": []
  },
  "recent": [
   {
