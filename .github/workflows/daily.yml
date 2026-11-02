@@ -28,7 +28,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Fetch RIPE data and rebuild
-        run: ./run_daily.sh
+        python3 pipeline/fetch.py
+        python3 pipeline/build.py
       - name: Commit refreshed data
         run: |
           git config user.name  "asn-map-bot"
