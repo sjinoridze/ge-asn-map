@@ -114,6 +114,7 @@ def main():
     MIN_UP_SHARE = settings.get("min_upstream_share", 0.03)
     MIN_DOWN = settings.get("min_customer_power", 15)
     MIN_PEER = settings.get("min_peer_power", 3)
+    MIN_BACKUP = settings.get("min_backup_power", 10)
     country = settings.get("country", "GE")
 
     names = {}
@@ -215,16 +216,135 @@ def main():
             return a, b, "transit"
         return a, b, ("mutual" if "mutual" in rels else "peer")
 
-    edges = []
+    # ---- CAIDA (second relationship source, monthly, RIS + RouteViews)
+    caida, caida_src = {}, ""
+    cp = os.path.join(CACHE, "caida_rel.txt")
+    if os.path.exists(cp):
+        for line in open(cp):
+            if line.startswith("# source"):
+                caida_src = line.split()[-1]
+                continue
+            q = line.strip().split("|")
+            if len(q) < 3 or line.startswith("#"):
+                continue
+            a, b = "AS" + q[0], "AS" + q[1]
+            if a not in GE and b not in GE:
+                continue
+            caida[tuple(sorted((a, b)))] = (a, b, "transit") if q[2] == "-1" else (a, b, "peer")
+
+    def weak(child, parent):
+        """weak live evidence that parent sells transit to child"""
+        return max(P.get((child, parent, "left"), 0), P.get((parent, child, "right"), 0))
+
+    edges, done = [], set()
+
+    def add(src, dst, t, pw, sources, **kw):
+        k = tuple(sorted((src, dst)))
+        ie = irr.get(k)
+        if ie:
+            sources = sorted(set(sources) | {"ripe"})
+        e = dict(src=src, dst=dst, type=t, power=pw, live=True, irr=bool(ie), sources=sources,
+                 policy=ie["policy"] if ie else {})
+        e.update(kw)
+        edges.append(e)
+        done.add(k)
+        return e
+
+    # 1) strong live adjacencies (RIS)
     for (a, b), (t, pw) in rel.items():
-        ie = irr.get(tuple(sorted((a, b))))
-        edges.append(dict(src=a, dst=b, type=t, power=pw, live=True, irr=bool(ie), policy=ie["policy"] if ie else {}))
-    livepairs = {tuple(sorted((e["src"], e["dst"]))) for e in edges}
-    for k, e in irr.items():
-        if k in livepairs or not (k[0] in seen or k[1] in seen):
+        src_ = ["ris"]
+        c = caida.get(tuple(sorted((a, b))))
+        if c and ((t == "transit" and c[2] == "transit" and c[0] == a) or (t != "transit" and c[2] == "peer")):
+            src_.append("caida")
+        add(a, b, t, pw, src_)
+    # 2) CAIDA links RIS did not show strongly
+    for k, (a, b, t) in caida.items():
+        if k in done:
             continue
-        s, d, t = irr_direction(k, e)
-        edges.append(dict(src=s, dst=d, type=t, power=0, live=False, irr=True, stale=True, policy=e["policy"]))
+        if t == "peer" and not (a in GE and b in GE):
+            continue
+        w = weak(b, a) if t == "transit" else 0
+        add(a, b, t, w, ["caida", "ris"] if w >= MIN_BACKUP else ["caida"], caida_only=w < MIN_BACKUP)
+    # 3) weak live + declared in RIPE as upstream -> backup / lightly used transit
+    for k, e in irr.items():
+        if k in done:
+            continue
+        s_, d_, t_ = irr_direction(k, e)
+        if t_ == "transit":
+            w = weak(d_, s_)
+            if w >= MIN_BACKUP:
+                add(s_, d_, "transit", w, ["ris"], backup=True)
+    # 4) hand-made corrections
+    opath = os.path.join(CONFIG, "overrides.json")
+    hidden = set()
+    if os.path.exists(opath):
+        ov = json.load(open(opath))
+        for h in ov.get("hide", []):
+            hidden.add(tuple(sorted((h["src"].upper(), h["dst"].upper()))))
+        for l in ov.get("add", []):
+            a, b = l["src"].upper(), l["dst"].upper()
+            k = tuple(sorted((a, b)))
+            if k in done:
+                for e in edges:
+                    if tuple(sorted((e["src"], e["dst"]))) == k:
+                        e["sources"] = sorted(set(e["sources"]) | {"manual"})
+                        e["note"] = l.get("note", "")
+                continue
+            add(a, b, l.get("type", "transit"), 0, ["manual"], manual=True, note=l.get("note", ""))
+    if hidden:
+        edges = [e for e in edges if tuple(sorted((e["src"], e["dst"]))) not in hidden]
+        done -= hidden
+    # 5) declared in RIPE only -> stale layer
+    for k, e in irr.items():
+        if k in done or k in hidden or not (k[0] in seen or k[1] in seen):
+            continue
+        s_, d_, t_ = irr_direction(k, e)
+        edges.append(dict(src=s_, dst=d_, type=t_, power=0, live=False, irr=True, stale=True, sources=["ripe"], policy=e["policy"]))
+    livepairs = {tuple(sorted((e["src"], e["dst"]))) for e in edges if not e.get("stale")}
+
+    # ---- link-state memory: a change counts only after it holds for N runs
+    os.makedirs(HIST, exist_ok=True)
+    CONFIRM = settings.get("confirm_runs", 2)
+    spath = os.path.join(HIST, "linkstate.json")
+    state = json.load(open(spath)) if os.path.exists(spath) else None
+    today = datetime.date.today().isoformat()
+    link_changes = []
+    cur = {f"{e['src']}|{e['dst']}": e for e in edges if e["type"] in ("transit", "mutual") and not e.get("stale")}
+    if state is None:
+        state = {k: dict(first=today, last=today, streak=CONFIRM, miss=0, on=True, edge=v) for k, v in cur.items()}
+    else:
+        for k, e in cur.items():
+            st = state.setdefault(k, dict(first=today, streak=0, miss=0, on=False))
+            if st.get("last") != today:
+                st["streak"] = st.get("streak", 0) + 1
+            st.update(last=today, miss=0, edge=e)
+            if not st["on"] and st["streak"] >= CONFIRM:
+                st["on"] = True
+                link_changes.append(("link_added", k))
+            if not st["on"]:
+                e["pending"] = True          # new, not yet confirmed
+        for k in list(state):
+            if k in cur:
+                continue
+            st = state[k]
+            if st.get("missed_on") != today:
+                st["miss"] = st.get("miss", 0) + 1
+                st["missed_on"] = today
+            st["streak"] = 0
+            if st["on"] and st["miss"] >= CONFIRM:
+                st["on"] = False
+                link_changes.append(("link_removed", k))
+            elif st["on"]:
+                g = dict(st["edge"])
+                g["grace"] = True             # missing today, kept until confirmed gone
+                gk = tuple(sorted((g["src"], g["dst"])))
+                if gk not in livepairs:
+                    edges[:] = [x for x in edges if not (x.get("stale") and tuple(sorted((x["src"], x["dst"]))) == gk)]
+                    edges.append(g)
+                    livepairs.add(tuple(sorted((g["src"], g["dst"]))))
+            if not st["on"] and st["miss"] >= CONFIRM:
+                del state[k]
+    json.dump(state, open(spath, "w"), separators=(",", ":"))
 
     # corporate groups: same registered name + config/groups.json
     by = collections.defaultdict(list)
@@ -246,6 +366,44 @@ def main():
                 if tuple(sorted((a, b))) not in livepairs:
                     edges.append(dict(src=a, dst=b, type="group", power=0, live=True, irr=False, policy={}))
 
+    # ---- PeeringDB (exchanges, facilities) and announced address space
+    pdir = os.path.join(CACHE, "peeringdb")
+    def pload(n):
+        f = os.path.join(pdir, n + ".json")
+        return json.load(open(f)) if os.path.exists(f) else []
+    pdb_net = {"AS" + str(r["asn"]): r for r in pload("net")}
+    ixinfo = {r["id"]: r for r in pload("ix")}
+    ix_members = collections.defaultdict(dict)
+    for r in pload("netixlan"):
+        a = "AS" + str(r["asn"])
+        if a in GE:
+            m = ix_members[r["ix_id"]].setdefault(a, dict(speed=0, rs=False))
+            m["speed"] += int(r.get("speed") or 0)
+            m["rs"] = m["rs"] or bool(r.get("is_rs_peer"))
+    net_facs = collections.defaultdict(list)
+    fac_members = collections.defaultdict(set)
+    for r in pload("netfac"):
+        a = "AS" + str(r.get("local_asn"))
+        if a in GE:
+            net_facs[a].append(dict(id=r.get("fac_id"), name=r.get("name", ""), city=r.get("city", ""), cc=r.get("country", "")))
+            fac_members[r.get("fac_id")].add(a)
+    country_facs = [dict(id=f["id"], name=f.get("name", ""), city=f.get("city", ""), website=f.get("website", ""),
+                         members=sorted(fac_members.get(f["id"], set()))) for f in pload("fac_country")]
+    country_facs.sort(key=lambda f: (-len(f["members"]), f["name"]))
+    MIN_IX = settings.get("min_ix_members_on_graph", 2)
+    for ixid, mem in ix_members.items():
+        if len(mem) < MIN_IX:
+            continue
+        for a, m in mem.items():
+            edges.append(dict(src=f"IX:{ixid}", dst=a, type="ix", power=0, live=True, irr=False, sources=["peeringdb"], policy={},
+                              speed=m["speed"], rs=m["rs"]))
+    space = {}
+    for a in GE:
+        f = os.path.join(CACHE, "rstatus", a + ".json")
+        if os.path.exists(f):
+            d = json.load(open(f)).get("announced_space", {})
+            space[a] = dict(v4_24=round((d.get("v4", {}).get("ips") or 0) / 256), v6_48=d.get("v6", {}).get("48s") or 0)
+
     # nodes
     nodes = {}
 
@@ -255,6 +413,10 @@ def main():
         if x in GE:
             r = recs.get(x, {})
             nodes[x] = dict(id=x, name=names[x] or x, grp="GE", cc=country, as_name=r.get("as_name", ""), created=r.get("created", ""), inbgp=x in seen)
+        elif x.startswith("IX:"):
+            ix = ixinfo.get(int(x[3:]), {})
+            nodes[x] = dict(id=x, name=ix.get("name", x), as_name="", grp="IX", cc=ix.get("country", ""), city=ix.get("city", ""),
+                            members=sorted(ix_members.get(int(x[3:]), {})))
         else:
             h, d, cc = info.get(x, ("", "", ""))
             nodes[x] = dict(id=x, name=d, as_name=h, grp=("T1" if x in TIER1 else "INT"), cc=cc)
@@ -265,10 +427,16 @@ def main():
     for e in edges:
         mk(e["src"]), mk(e["dst"])
     for n in nodes.values():
-        n.update(up=[], down=[], peers=[], stale_up=[], group=gof.get(n["id"], ""),
+        n.update(up=[], down=[], peers=[], stale_up=[], backup_up=[], ixs=[], group=gof.get(n["id"], ""),
                  siblings=[x for x in groups.get(gof.get(n["id"], ""), []) if x != n["id"]])
     for e in edges:
         if e["type"] == "group":
+            continue
+        if e["type"] == "ix":
+            nodes[e["dst"]]["ixs"].append(e["src"])
+            continue
+        if e.get("backup"):
+            nodes[e["dst"]]["backup_up"].append(e["src"])
             continue
         if e.get("stale"):
             if e["type"] == "transit":
@@ -289,6 +457,14 @@ def main():
         nu = len(n["up"])
         mut = [p for p in n["peers"] if any(e["type"] == "mutual" and not e.get("stale") and {e["src"], e["dst"]} == {x, p} for e in edges)]
         n["mutual"], n["foreign_peers"] = mut, fpeers[x]
+        n["space"] = space.get(x, {})
+        n["facs"] = net_facs.get(x, [])
+        n["all_ixs"] = sorted([dict(id=i, name=ixinfo.get(i, {}).get("name", f"IX {i}"), city=ixinfo.get(i, {}).get("city", ""),
+                                    cc=ixinfo.get(i, {}).get("country", ""), speed=m[x]["speed"]) for i, m in ix_members.items() if x in m],
+                              key=lambda r: -r["speed"])
+        pn_ = pdb_net.get(x)
+        if pn_:
+            n["pdb"] = dict(id=pn_.get("id"), type=pn_.get("info_type", ""), website=pn_.get("website", ""))
         if not n["inbgp"]:
             role = "Not visible in BGP"
         elif nd >= 10:
@@ -310,15 +486,17 @@ def main():
         n["ge_links"] = sum(1 for y in nb if nodes[y]["grp"] == "GE")
         n["offshore"] = bool(n["inbgp"] and nb and n["ge_links"] == 0)
 
-    today = datetime.date.today().isoformat()
     out = dict(nodes=list(nodes.values()), edges=edges,
                meta=dict(built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), date=today, country=country,
                          live_source="RIPEstat asn-neighbours (RIPE RIS route collectors)", groups=groups,
-                         counts=dict(asns=len(GE), in_bgp=len(seen))))
+                         counts=dict(asns=len(GE), in_bgp=len(seen)), caida=caida_src, repo=settings.get("repo_url", ""),
+                         facilities=country_facs,
+                         exchanges=sorted([dict(id=i, name=ixinfo.get(i, {}).get("name", f"IX {i}"), city=ixinfo.get(i, {}).get("city", ""),
+                                                cc=ixinfo.get(i, {}).get("country", ""), members=sorted(m)) for i, m in ix_members.items()],
+                                          key=lambda r: (-len(r["members"]), r["name"]))))
 
     # ------------------------------------------------ changes vs previous build
     os.makedirs(OUT, exist_ok=True)
-    os.makedirs(HIST, exist_ok=True)
     prev_path = os.path.join(OUT, "net.json")
     changes = {"date": today, "since": None, "items": []}
     if os.path.exists(prev_path):
@@ -326,14 +504,11 @@ def main():
         changes["since"] = prev.get("meta", {}).get("date")
         pn = {n["id"]: n for n in prev["nodes"]}
 
-        def tl(d):
-            return {(e["src"], e["dst"]) for e in d["edges"] if e["type"] in ("transit", "mutual") and not e.get("stale")}
-        old, new = tl(prev), tl(out)
         nm = lambda a: (nodes.get(a) or pn.get(a) or {}).get("name") or a
-        for s, d in sorted(new - old):
-            changes["items"].append(dict(kind="link_added", src=s, dst=d, text=f"{nm(d)} ({d}) now takes transit from {nm(s)} ({s})"))
-        for s, d in sorted(old - new):
-            changes["items"].append(dict(kind="link_removed", src=s, dst=d, text=f"{nm(d)} ({d}) no longer seen taking transit from {nm(s)} ({s})"))
+        for kind, k in sorted(link_changes):
+            s_, d_ = k.split("|")
+            verb = "now takes transit from" if kind == "link_added" else "no longer takes transit from"
+            changes["items"].append(dict(kind=kind, src=s_, dst=d_, text=f"{nm(d_)} ({d_}) {verb} {nm(s_)} ({s_}), confirmed over {CONFIRM} runs"))
         for a in sorted(GE):
             was = pn.get(a, {}).get("inbgp")
             if a not in pn:
@@ -368,7 +543,8 @@ def main():
         os.remove(old)
 
     print(f"built: {len(GE)} ASNs, {len(seen)} in BGP, {sum(1 for e in edges if e['type'] == 'transit' and not e.get('stale'))} live transit links, "
-          f"{sum(1 for e in edges if e.get('stale'))} RIPE-only, {len(changes['items'])} changes")
+          f"{sum(1 for e in edges if e.get('stale'))} RIPE-only, {sum(1 for e in edges if e.get('backup'))} backup, "
+          f"{sum(1 for e in edges if e.get('caida_only'))} CAIDA-only, {sum(1 for e in edges if e['type'] == 'ix')} IX memberships, {len(changes['items'])} changes")
 
 
 if __name__ == "__main__":
