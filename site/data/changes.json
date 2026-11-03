@@ -1,17 +1,10 @@
 {
- "built": "2026-11-03 08:11 UTC",
+ "built": "2026-11-03 10:15 UTC",
  "window_days": 30,
  "last_run": {
   "date": "2026-11-03",
-  "since": "2026-11-02",
-  "items": [
-   {
-    "kind": "link_removed",
-    "src": "AS58212",
-    "dst": "AS207359",
-    "text": "Tochka Network LLC (AS207359) no longer seen taking transit from dataforest GmbH (AS58212)"
-   }
-  ]
+  "since": "2026-11-03",
+  "items": []
  },
  "recent": [
   {
