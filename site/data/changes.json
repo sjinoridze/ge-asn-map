@@ -1,12 +1,24 @@
 {
- "built": "2026-11-04 07:57 UTC",
+ "built": "2026-11-05 08:14 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-04",
-  "since": "2026-11-03",
-  "items": []
+  "date": "2026-11-05",
+  "since": "2026-11-04",
+  "items": [
+   {
+    "kind": "link_added",
+    "src": "AS58212",
+    "dst": "AS218322",
+    "text": "Vsem Network LLC (AS218322) now takes transit from dataforest GmbH (AS58212), confirmed over 2 runs"
+   }
+  ]
  },
  "recent": [
+  {
+   "date": "2026-11-05",
+   "kind": "link_added",
+   "text": "Vsem Network LLC (AS218322) now takes transit from dataforest GmbH (AS58212), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-03",
    "kind": "link_removed",
