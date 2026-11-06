@@ -1,5 +1,9 @@
 {
-  "country": "GE",
+  "countries": [
+    "GE",
+    "AZ",
+    "AM"
+  ],
   "discover_country_asns": true,
   "min_upstream_power": 20,
   "min_upstream_share": 0.03,

@@ -2,7 +2,8 @@
 """
 Step 1 of the daily job: download fresh source data into ../cache/
 
-  cache/asn_list.txt        Georgian ASNs (RIPEstat country-resource-list, merged with config/asns.txt)
+  cache/asn_list.txt        ASNs of every country in settings 'countries' (RIPEstat country-resource-list,
+                            merged with config/asns.txt); columns: ASN, preferred name, country
   cache/whois/ASxxx.txt     RIPE aut-num object + its organisation object (routing policy, org name)
   cache/live/ASxxx.json     RIPEstat asn-neighbours (live BGP adjacencies from RIPE RIS)
   cache/asinfo.csv          ASN -> name/country for foreign networks (ipverse snapshot on GitHub)
@@ -113,10 +114,16 @@ def fetch_peeringdb(asns):
             json.dump(rows, open(os.path.join(out_dir, "ix.json"), "w"))
     except Exception as e:
         print("   ! PeeringDB ix lookup skipped:", e)
-    country = json.load(open(os.path.join(CONFIG, "settings.json"))).get("country", "GE")
-    facs = get(f"fac?country={country}")
-    if facs is not None:
-        json.dump(facs, open(os.path.join(out_dir, "fac_country.json"), "w"))
+    allfacs, ok = [], True
+    for country in countries_of(json.load(open(os.path.join(CONFIG, "settings.json")))):
+        facs = get(f"fac?country={country}")
+        if facs is None:
+            ok = False
+            break
+        allfacs += facs
+        time.sleep(4)
+    if ok:
+        json.dump(allfacs, open(os.path.join(out_dir, "fac_country.json"), "w"))
 
 
 def fetch_caida(asns):
@@ -146,15 +153,26 @@ def fetch_caida(asns):
         print("   ! CAIDA download failed, keeping previous copy:", e)
 
 
+def countries_of(settings):
+    c = settings.get("countries") or [settings.get("country", "GE")]
+    return [x.upper() for x in c]
+
+
 def load_manual_list():
-    """config/asns.txt: 'AS12345<TAB>Name' per line. Optional; names here override."""
+    """config/asns.txt: 'AS12345<TAB>Name[<TAB>CC]' per line (or 'Name, CC'). Optional; names here override."""
     out = {}
     p = os.path.join(CONFIG, "asns.txt")
     if os.path.exists(p):
         for line in open(p, encoding="utf-8", errors="replace"):
             m = re.match(r"\s*(AS\d+)\s*(.*)", line, re.I)
             if m:
-                out[m.group(1).upper()] = re.sub(r",\s*GE$", "", m.group(2).strip())
+                parts = m.group(2).split("\t")
+                name = parts[0].strip()
+                c = parts[1].strip().upper() if len(parts) > 1 and len(parts[1].strip()) == 2 else ""
+                m2 = re.search(r",\s*([A-Z]{2})$", name)
+                if m2 and not c:
+                    c = m2.group(1)
+                out[m.group(1).upper()] = (re.sub(r",\s*[A-Z]{2}$", "", name), c)
     return out
 
 
@@ -166,17 +184,26 @@ def main():
 
     # 1. the ASN list
     manual = load_manual_list()
-    asns = set(manual)
+    countries = countries_of(settings)
+    cc = {}
     if settings.get("discover_country_asns", True):
-        j = http_json(STAT.format(call="country-resource-list", res=settings.get("country", "GE")))
-        if j:
-            found = {"AS" + str(a) for a in j.get("data", {}).get("resources", {}).get("asn", [])}
-            print(f"RIPEstat lists {len(found)} ASNs registered in {settings.get('country', 'GE')}")
-            asns |= found
-    asns = sorted(asns, key=lambda a: int(a[2:]))
+        for country in countries:
+            j = http_json(STAT.format(call="country-resource-list", res=country))
+            if j:
+                found = {"AS" + str(a) for a in j.get("data", {}).get("resources", {}).get("asn", [])}
+                print(f"RIPEstat lists {len(found)} ASNs registered in {country}")
+                for a in found:
+                    cc.setdefault(a, country)
+            time.sleep(0.5)
+    for a, (name, c) in manual.items():
+        if c:
+            cc[a] = c
+        else:
+            cc.setdefault(a, countries[0])
+    asns = sorted(cc, key=lambda a: int(a[2:]))
     with open(os.path.join(CACHE, "asn_list.txt"), "w") as f:
         for a in asns:
-            f.write(f"{a}\t{manual.get(a, '')}\n")
+            f.write(f"{a}\t{manual.get(a, ('', ''))[0]}\t{cc[a]}\n")
     print(f"{len(asns)} ASNs to refresh")
 
     # 2. foreign names
@@ -199,15 +226,15 @@ def main():
             text = whois_over_https(a)
         if "aut-num:" in text:
             open(os.path.join(CACHE, "whois", a + ".txt"), "w", encoding="utf-8").write(text)
-        time.sleep(1)
+        time.sleep(0.5)
         j = http_json(STAT.format(call="asn-neighbours", res=a))
         if j and j.get("status") == "ok":
             json.dump(j, open(os.path.join(CACHE, "live", a + ".json"), "w"))
-        time.sleep(1)
+        time.sleep(0.5)
         j = http_json(STAT.format(call="routing-status", res=a))
         if j and j.get("status") == "ok":
             json.dump(j.get("data", {}), open(os.path.join(CACHE, "rstatus", a + ".json"), "w"))
-        time.sleep(1)
+        time.sleep(0.5)
 
     # 4. exchanges and facilities, 5. second relationship source
     fetch_peeringdb(asns)

@@ -75,6 +75,15 @@ and that `python3` is available (`python3 --version` in the cron command).
 If `site/` is a copy rather than a symlink, add `&& cp site/data/*.json /home/USER/public_html/asnmap/data/`
 to the end of `run_daily.sh`.
 
+## Countries
+
+`config/settings.json` → `"countries": ["GE", "AZ", "AM"]`. Every ASN registered in those countries
+is discovered from RIPEstat each day. The page has a tab per country plus a **Whole region** view
+(`#ge`, `#az`, `#am`, `#region` at the end of the address), and a table of cross-border links.
+In a country tab, networks of the other two countries count as foreign neighbours.
+To add a country, add its two-letter code (any RIPE-region country works).
+`config/asns.txt` takes an optional country column: `AS12345<TAB>Preferred name<TAB>AZ`.
+
 ## Data sources and quality controls
 
 | Layer | Source | Refresh |

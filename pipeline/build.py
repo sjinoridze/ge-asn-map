@@ -9,7 +9,7 @@ Relationship rules
                 and >= 3% of the network's strongest upstream path
     customer  = neighbour on the far side ("right") seen by >= 15 feeds
     mutual    = both directions strong (sister networks passing each other's routes)
-    peer      = 'uncertain' adjacency between two networks of the country list
+    peer      = 'uncertain' adjacency between two networks of the country list (any of 'countries')
   RIPE (aut-num import/export):
     links declared in RIPE but not seen live are kept as 'stale' (RIPE-only)
 Standard library only.
@@ -115,13 +115,16 @@ def main():
     MIN_DOWN = settings.get("min_customer_power", 15)
     MIN_PEER = settings.get("min_peer_power", 3)
     MIN_BACKUP = settings.get("min_backup_power", 10)
-    country = settings.get("country", "GE")
+    countries = [c.upper() for c in (settings.get("countries") or [settings.get("country", "GE")])]
+    country = countries[0]
+    cc_of = {}
 
     names = {}
     for line in open(os.path.join(CACHE, "asn_list.txt"), encoding="utf-8"):
         p = line.rstrip("\n").split("\t")
         if p[0]:
             names[p[0]] = p[1] if len(p) > 1 else ""
+            cc_of[p[0]] = (p[2] if len(p) > 2 and p[2] else country).upper()
 
     info = {}
     if os.path.exists(os.path.join(CACHE, "asinfo.csv")):
@@ -387,7 +390,7 @@ def main():
         if a in GE:
             net_facs[a].append(dict(id=r.get("fac_id"), name=r.get("name", ""), city=r.get("city", ""), cc=r.get("country", "")))
             fac_members[r.get("fac_id")].add(a)
-    country_facs = [dict(id=f["id"], name=f.get("name", ""), city=f.get("city", ""), website=f.get("website", ""),
+    country_facs = [dict(id=f["id"], name=f.get("name", ""), city=f.get("city", ""), cc=f.get("country", ""), website=f.get("website", ""),
                          members=sorted(fac_members.get(f["id"], set()))) for f in pload("fac_country")]
     country_facs.sort(key=lambda f: (-len(f["members"]), f["name"]))
     MIN_IX = settings.get("min_ix_members_on_graph", 2)
@@ -412,7 +415,7 @@ def main():
             return
         if x in GE:
             r = recs.get(x, {})
-            nodes[x] = dict(id=x, name=names[x] or x, grp="GE", cc=country, as_name=r.get("as_name", ""), created=r.get("created", ""), inbgp=x in seen)
+            nodes[x] = dict(id=x, name=names[x] or x, grp="GE", cc=cc_of.get(x, country), as_name=r.get("as_name", ""), created=r.get("created", ""), inbgp=x in seen)
         elif x.startswith("IX:"):
             ix = ixinfo.get(int(x[3:]), {})
             nodes[x] = dict(id=x, name=ix.get("name", x), as_name="", grp="IX", cc=ix.get("country", ""), city=ix.get("city", ""),
@@ -420,7 +423,7 @@ def main():
         else:
             h, d, cc = info.get(x, ("", "", ""))
             nodes[x] = dict(id=x, name=d, as_name=h, grp=("T1" if x in TIER1 else "INT"), cc=cc)
-            if cc == country:
+            if cc in countries:
                 nodes[x]["grp"] = "GE"
     for a in GE:
         mk(a)
@@ -483,11 +486,14 @@ def main():
             role = "Peering only"
         n["role"] = role
         nb = (set(n["up"]) | set(n["down"]) | set(n["peers"])) - sib
-        n["ge_links"] = sum(1 for y in nb if nodes[y]["grp"] == "GE")
+        # "ge_links" = links to networks of the SAME country; "reg_links" = to any country of the region
+        n["ge_links"] = sum(1 for y in nb if nodes[y]["grp"] == "GE" and nodes[y].get("cc") == n["cc"])
+        n["reg_links"] = sum(1 for y in nb if nodes[y]["grp"] == "GE")
         n["offshore"] = bool(n["inbgp"] and nb and n["ge_links"] == 0)
+        n["offshore_region"] = bool(n["inbgp"] and nb and n["reg_links"] == 0)
 
     out = dict(nodes=list(nodes.values()), edges=edges,
-               meta=dict(built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), date=today, country=country,
+               meta=dict(built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), date=today, country=country, countries=countries,
                          live_source="RIPEstat asn-neighbours (RIPE RIS route collectors)", groups=groups,
                          counts=dict(asns=len(GE), in_bgp=len(seen)), caida=caida_src, repo=settings.get("repo_url", ""),
                          facilities=country_facs,
