@@ -1,12 +1,2663 @@
 {
- "built": "2026-11-06 08:13 UTC",
+ "built": "2026-11-06 11:58 UTC",
  "window_days": 30,
  "last_run": {
   "date": "2026-11-06",
-  "since": "2026-11-05",
-  "items": []
+  "since": "2026-11-06",
+  "items": [
+   {
+    "kind": "asn_new",
+    "src": "AS13099",
+    "text": "New ASN in the list: \"AZ-EVRO TEL\" LLC (AS13099)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS15723",
+    "text": "New ASN in the list: \"AZERONLINE LTD\" JOINT ENTERPRISE (AS15723)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS15815",
+    "text": "New ASN in the list: INTRA Network Systems Ltd (AS15815)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS16190",
+    "text": "New ASN in the list: LIR LLC (AS16190)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS196709",
+    "text": "New ASN in the list: GNC-Alfa CJSC (AS196709)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS196821",
+    "text": "New ASN in the list: AzInTelecom LLC (AS196821)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS196961",
+    "text": "New ASN in the list: Teleport LLC (AS196961)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS197189",
+    "text": "New ASN in the list: TERMINAL PAHEST LLC (AS197189)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS197497",
+    "text": "New ASN in the list: OFFICE OF THE PRIME-MINISTER OF THE REPUBLIC OF ARMENIA STATE BODY (AS197497)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS197805",
+    "text": "New ASN in the list: Dzoraghbyur Complex LLC (AS197805)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS197830",
+    "text": "New ASN in the list: BAKCELL LLC (AS197830)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS197834",
+    "text": "New ASN in the list: Ucom CJSC (AS197834)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198177",
+    "text": "New ASN in the list: Vernon LLC (AS198177)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198265",
+    "text": "New ASN in the list: I-NET LLC (AS198265)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198441",
+    "text": "New ASN in the list: Migtelecom LLC (AS198441)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198480",
+    "text": "New ASN in the list: Perine Gevorgyan (AS198480)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198767",
+    "text": "New ASN in the list: Antranik Wartanian (AS198767)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS198828",
+    "text": "New ASN in the list: Abonnet LLC (AS198828)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199062",
+    "text": "New ASN in the list: SOFT CONSTRUCT CJSC (AS199062)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199180",
+    "text": "New ASN in the list: Lagom Products LLC (AS199180)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199311",
+    "text": "New ASN in the list: Azertelecom LLC (AS199311)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199444",
+    "text": "New ASN in the list: HMC Company LLC (AS199444)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199620",
+    "text": "New ASN in the list: Regionnet LLC (AS199620)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199673",
+    "text": "New ASN in the list: AMWEB LLC (AS199673)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199698",
+    "text": "New ASN in the list: Maxinet LLC (AS199698)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199731",
+    "text": "New ASN in the list: The Educational Center for Internet and New Technologies of the Nakhchivan Autonomous Republic (AS199731)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199968",
+    "text": "New ASN in the list: IWS NETWORKS LLC (AS199968)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199985",
+    "text": "New ASN in the list: Metronet LLC (AS199985)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS199987",
+    "text": "New ASN in the list: Flexnet LLC (AS199987)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200012",
+    "text": "New ASN in the list: NAXTEL Limited Liability Company (AS200012)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200154",
+    "text": "New ASN in the list: IZONE LLC (AS200154)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200192",
+    "text": "New ASN in the list: Super Optik Tech LLC (AS200192)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200196",
+    "text": "New ASN in the list: Azerlink LLC (AS200196)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200205",
+    "text": "New ASN in the list: Viva Armenia CJSC (AS200205)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200446",
+    "text": "New ASN in the list: SELNET LLC (AS200446)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200650",
+    "text": "New ASN in the list: Megalink LLC (AS200650)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200729",
+    "text": "New ASN in the list: AzInTelecom LLC (AS200729)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS200896",
+    "text": "New ASN in the list: Arpinet LLC (AS200896)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201039",
+    "text": "New ASN in the list: Manushak Galoyan (AS201039)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201063",
+    "text": "New ASN in the list: Ameriabank CJSC (AS201063)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201167",
+    "text": "New ASN in the list: Caspian Telecom LLC (AS201167)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201219",
+    "text": "New ASN in the list: Mushegh Baghdasaryan (AS201219)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201300",
+    "text": "New ASN in the list: Mirkamal Emiraslanov (AS201300)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201363",
+    "text": "New ASN in the list: YOURnet LLC (AS201363)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201373",
+    "text": "New ASN in the list: NET.SERVICES LLC (AS201373)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201390",
+    "text": "New ASN in the list: Azericard LLC (AS201390)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201589",
+    "text": "New ASN in the list: \"EDGEAM\" LLC (AS201589)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201639",
+    "text": "New ASN in the list: INECOBANK CJSC (AS201639)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201884",
+    "text": "New ASN in the list: ISP SUPPORT LLC (AS201884)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201921",
+    "text": "New ASN in the list: \"DIGITAIN\" LLC (AS201921)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS201986",
+    "text": "New ASN in the list: Arpinet LLC (AS201986)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS202269",
+    "text": "New ASN in the list: BitCommand LLC (AS202269)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS202515",
+    "text": "New ASN in the list: ID Bank CJSC (AS202515)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS202740",
+    "text": "New ASN in the list: IM ID CJSC (AS202740)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS202993",
+    "text": "New ASN in the list: Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS203622",
+    "text": "New ASN in the list: GSP LLC (AS203622)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS203680",
+    "text": "New ASN in the list: Araz Tech LLC (AS203680)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS203739",
+    "text": "New ASN in the list: Sajad Charipour (AS203739)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS203971",
+    "text": "New ASN in the list: AzFiberNet LLC (AS203971)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204016",
+    "text": "New ASN in the list: International Bank of Azerbaijan OJSC (AS204016)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204194",
+    "text": "New ASN in the list: \"South Caucasus Railway\" CJSC (AS204194)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204241",
+    "text": "New ASN in the list: Byblos Armenian Bank CJSC (AS204241)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204267",
+    "text": "New ASN in the list: \"Homenet\" LLC (AS204267)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204620",
+    "text": "New ASN in the list: EVOCABANK CJSC (AS204620)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204840",
+    "text": "New ASN in the list: \"Xalq Sigorta\" OJSC (AS204840)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204966",
+    "text": "New ASN in the list: Erik Mosinyan (AS204966)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS204986",
+    "text": "New ASN in the list: Sparktel LLC (AS204986)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205258",
+    "text": "New ASN in the list: QoldenPey OJSC (AS205258)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205261",
+    "text": "New ASN in the list: STARROKETS LLC (AS205261)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205277",
+    "text": "New ASN in the list: Interlink LLC (AS205277)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205293",
+    "text": "New ASN in the list: RAYONLINE LLC (AS205293)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205317",
+    "text": "New ASN in the list: MAXINET LLC (AS205317)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205367",
+    "text": "New ASN in the list: NetPoint LLC (AS205367)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205368",
+    "text": "New ASN in the list: Fnet LLC (AS205368)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205547",
+    "text": "New ASN in the list: Flexnet LLC (AS205547)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS205605",
+    "text": "New ASN in the list: ID Processing LLC (AS205605)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS206230",
+    "text": "New ASN in the list: Team Host LLC (AS206230)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS206543",
+    "text": "New ASN in the list: Cabarco LLC (AS206543)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS206748",
+    "text": "New ASN in the list: Diananet LLC (AS206748)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS206783",
+    "text": "New ASN in the list: HAYKAZ GHANDILYAN ANDRANIKI Private Entrepreneur (AS206783)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS206977",
+    "text": "New ASN in the list: STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207081",
+    "text": "New ASN in the list: Bargavachokh Tsantser LLC (AS207081)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207251",
+    "text": "New ASN in the list: CASPEL LLC (AS207251)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207400",
+    "text": "New ASN in the list: VXSOFT LLC (AS207400)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207619",
+    "text": "New ASN in the list: HOSTART LLC (AS207619)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207810",
+    "text": "New ASN in the list: \"Virus Net\" LLC (AS207810)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207922",
+    "text": "New ASN in the list: AZETEL LLC (AS207922)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207980",
+    "text": "New ASN in the list: TINS LLC (AS207980)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS207991",
+    "text": "New ASN in the list: ACHON LLC (AS207991)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208081",
+    "text": "New ASN in the list: Fast Bank CJSC (AS208081)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208339",
+    "text": "New ASN in the list: UTC LLC (AS208339)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208410",
+    "text": "New ASN in the list: ARTKOM.NET LLC (AS208410)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208439",
+    "text": "New ASN in the list: Fiberon LLC (AS208439)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208526",
+    "text": "New ASN in the list: Nikita Mobile.Ltd (AS208526)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS208997",
+    "text": "New ASN in the list: INTERNET KOMUNIKATSION TSANTSER LLC (AS208997)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209089",
+    "text": "New ASN in the list: \"Azerbaijan Airlines\" Closed Joint Stock Company (AS209089)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209176",
+    "text": "New ASN in the list: EKENG CJSC (AS209176)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209262",
+    "text": "New ASN in the list: GSLINE LLC (AS209262)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209360",
+    "text": "New ASN in the list: Bulud Telecom LLC (AS209360)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209374",
+    "text": "New ASN in the list: The Central Bank of the Republic of Azerbaijan (AS209374)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209489",
+    "text": "New ASN in the list: Azintex.com LLC (AS209489)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209700",
+    "text": "New ASN in the list: \"PASHA TECHNOLOGY\" LLC (AS209700)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS209778",
+    "text": "New ASN in the list: Armcom LLC (AS209778)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210131",
+    "text": "New ASN in the list: Novalink LLC (AS210131)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210147",
+    "text": "New ASN in the list: ISP SUPPORT LLC (AS210147)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210260",
+    "text": "New ASN in the list: EuroNet Telecom LLC (AS210260)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210293",
+    "text": "New ASN in the list: Kapital Bank OJSC (AS210293)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210315",
+    "text": "New ASN in the list: Arpinet LLC (AS210315)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210381",
+    "text": "New ASN in the list: AMIOBANK CJSC (AS210381)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210419",
+    "text": "New ASN in the list: Fibernet LLC (AS210419)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210520",
+    "text": "New ASN in the list: Armenian Branch of \"Synergy International Systems\" Joint-Stock Company Separated Subdivision (AS210520)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210665",
+    "text": "New ASN in the list: Innovation and Digital Development Agency (Public Legal Entity) (AS210665)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS210677",
+    "text": "New ASN in the list: ISP SUPPORT LLC (AS210677)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS21104",
+    "text": "New ASN in the list: Netsys JV LLC (AS21104)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211092",
+    "text": "New ASN in the list: Ucom CJSC (AS211092)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211143",
+    "text": "New ASN in the list: Azerlotereya Open Joint Stock Company (AS211143)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211704",
+    "text": "New ASN in the list: CENTRAL ELECTORAL COMMISION OF THE REPUBLIC OF ARMENIA (AS211704)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211780",
+    "text": "New ASN in the list: Cavansir Ramazanov (AS211780)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211790",
+    "text": "New ASN in the list: INNET.AZ LTD (AS211790)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211793",
+    "text": "New ASN in the list: \"Ingo Armenia\" Insurance CJSC (AS211793)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211937",
+    "text": "New ASN in the list: Azersun Holding LLC (AS211937)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211944",
+    "text": "New ASN in the list: Narek Tadevosyan (AS211944)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211960",
+    "text": "New ASN in the list: Bank Respublika OJSC (AS211960)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS211995",
+    "text": "New ASN in the list: A2Z Technologies CJSC (AS211995)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS212183",
+    "text": "New ASN in the list: House Net LLC (AS212183)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS212505",
+    "text": "New ASN in the list: Volo LLC (AS212505)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS212552",
+    "text": "New ASN in the list: BitCommand LLC (AS212552)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS212749",
+    "text": "New ASN in the list: ACBA Bank OJSC (AS212749)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS212898",
+    "text": "New ASN in the list: Meganet HD LLC (AS212898)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213134",
+    "text": "New ASN in the list: \"DIGITAIN\" LLC (AS213134)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213139",
+    "text": "New ASN in the list: Faraon-1 LLC (AS213139)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213328",
+    "text": "New ASN in the list: AZETEL LLC (AS213328)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213379",
+    "text": "New ASN in the list: Xalq Bank OJSC (AS213379)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213398",
+    "text": "New ASN in the list: Fibernet LLC (AS213398)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213402",
+    "text": "New ASN in the list: Rahat Telecom LLC (AS213402)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213670",
+    "text": "New ASN in the list: TTNET LLC (AS213670)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213827",
+    "text": "New ASN in the list: GetNet LLC (AS213827)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS213881",
+    "text": "New ASN in the list: OUR Technology LLC (AS213881)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214198",
+    "text": "New ASN in the list: NeoMetals LLC (AS214198)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214287",
+    "text": "New ASN in the list: Converse Bank CJSC (AS214287)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214468",
+    "text": "New ASN in the list: Araznet Technologies LLC (AS214468)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214489",
+    "text": "New ASN in the list: AZNET TECHNOLOGIES LLC (AS214489)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214682",
+    "text": "New ASN in the list: Epro.io LLC (AS214682)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214729",
+    "text": "New ASN in the list: Prostie Reshenia LLC (AS214729)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214869",
+    "text": "New ASN in the list: Yotta Network LLC (AS214869)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214946",
+    "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS214946)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214977",
+    "text": "New ASN in the list: Artsakhbank CJSC (AS214977)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS214990",
+    "text": "New ASN in the list: GO LINE LLC (AS214990)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215017",
+    "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS215017)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215056",
+    "text": "New ASN in the list: Nardaran Invest LLC (AS215056)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215076",
+    "text": "New ASN in the list: Volt Internet LLC (AS215076)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215102",
+    "text": "New ASN in the list: GLOBALTECH LLC (AS215102)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215148",
+    "text": "New ASN in the list: Delta Telecom Ltd (AS215148)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215157",
+    "text": "New ASN in the list: OnlineNet LLC (AS215157)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215284",
+    "text": "New ASN in the list: Nest LLC (AS215284)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215328",
+    "text": "New ASN in the list: Fast Net Technology LLC (AS215328)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215374",
+    "text": "New ASN in the list: Azeuronet LLC (AS215374)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215416",
+    "text": "New ASN in the list: VIGEN PETROSYAN trading as \"SAMVELI\" (AS215416)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215421",
+    "text": "New ASN in the list: LikeNet LLC (AS215421)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215501",
+    "text": "New ASN in the list: Hingshabti LLC (AS215501)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215644",
+    "text": "New ASN in the list: Crossnet LLC (AS215644)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215719",
+    "text": "New ASN in the list: Unibank OJSC (AS215719)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215800",
+    "text": "New ASN in the list: UNIBANK Commercial Bank Open Joint-Stock Company (AS215800)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215858",
+    "text": "New ASN in the list: Delta Telecom Ltd (AS215858)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS215972",
+    "text": "New ASN in the list: GLOBALTECH LLC (AS215972)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216058",
+    "text": "New ASN in the list: Proitlab LLC (AS216058)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216086",
+    "text": "New ASN in the list: ART-NET LLC (AS216086)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216165",
+    "text": "New ASN in the list: HYPERNET LLC (AS216165)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216231",
+    "text": "New ASN in the list: Alnet LLC (AS216231)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216232",
+    "text": "New ASN in the list: NEOTELECOM SERVICES LLC (AS216232)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216259",
+    "text": "New ASN in the list: BLINE LLC (AS216259)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS216400",
+    "text": "New ASN in the list: FOR UNITY LLC (AS216400)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218237",
+    "text": "New ASN in the list: Kapital Telecom LLC (AS218237)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218346",
+    "text": "New ASN in the list: Nariman Mammadov (AS218346)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218452",
+    "text": "New ASN in the list: JEZA CLOUD LLC (AS218452)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218525",
+    "text": "New ASN in the list: Hertz Telecom LLC (AS218525)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218526",
+    "text": "New ASN in the list: Uplink LLC (AS218526)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218547",
+    "text": "New ASN in the list: Modep LLC (AS218547)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218650",
+    "text": "New ASN in the list: Goodnet LLC (AS218650)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218658",
+    "text": "New ASN in the list: Ulduz Net LLC (AS218658)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218702",
+    "text": "New ASN in the list: DoLifeBetter LLC (AS218702)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218787",
+    "text": "New ASN in the list: ATF TELECOM GROUP LLC (AS218787)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218825",
+    "text": "New ASN in the list: Azintelnet LLC (AS218825)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218847",
+    "text": "New ASN in the list: Ultranet LLC (AS218847)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218873",
+    "text": "New ASN in the list: AZFIBER-X MMC (AS218873)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS218976",
+    "text": "New ASN in the list: Lagom Products LLC (AS218976)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219028",
+    "text": "New ASN in the list: HayPost CJSC (AS219028)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219083",
+    "text": "New ASN in the list: YAPI KREDI BANK AZERBAIJAN CJSC (AS219083)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219140",
+    "text": "New ASN in the list: MARTIROSYAN MOVSES ARMEN (AS219140)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219159",
+    "text": "New ASN in the list: Turkcell LLC (AS219159)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219209",
+    "text": "New ASN in the list: ALTAIR LLC (AS219209)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219253",
+    "text": "New ASN in the list: UNI COMMUNICATION SERVICES LLC (AS219253)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219310",
+    "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS219310)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219322",
+    "text": "New ASN in the list: VALI GROUP LLC (AS219322)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219323",
+    "text": "New ASN in the list: SKY NET Telecom LLC (AS219323)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219343",
+    "text": "New ASN in the list: \"TTC SERVICE\" LLC (AS219343)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS219485",
+    "text": "New ASN in the list: ELFIBER LLC (AS219485)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS28787",
+    "text": "New ASN in the list: Aztelekom LLC (AS28787)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS29584",
+    "text": "New ASN in the list: AZEDUNET LLC (AS29584)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS31721",
+    "text": "New ASN in the list: Azercell Telecom Ltd (AS31721)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS33852",
+    "text": "New ASN in the list: Viva Armenia CJSC (AS33852)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS34083",
+    "text": "New ASN in the list: Arpinet LLC (AS34083)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS34170",
+    "text": "New ASN in the list: Aztelekom LLC (AS34170)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS34492",
+    "text": "New ASN in the list: MEDIA LIFE LLC (AS34492)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS34876",
+    "text": "New ASN in the list: \"SMART SISTEMZ TECHNOLOJI\" MMM (AS34876)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS35303",
+    "text": "New ASN in the list: Telecom Armenia OJSC (AS35303)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39232",
+    "text": "New ASN in the list: Uninet LLC (AS39232)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39280",
+    "text": "New ASN in the list: Ultel LLC (AS39280)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39344",
+    "text": "New ASN in the list: SMAYL SISTEMS LLC (AS39344)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39355",
+    "text": "New ASN in the list: LIR LLC (AS39355)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39397",
+    "text": "New ASN in the list: Metronet LLC (AS39397)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39854",
+    "text": "New ASN in the list: TEAM-HOST LLC (AS39854)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS39863",
+    "text": "New ASN in the list: Crossnet LLC (AS39863)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS41997",
+    "text": "New ASN in the list: Connect CJSC (AS41997)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS42031",
+    "text": "New ASN in the list: GLOBALTECH LLC (AS42031)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS42109",
+    "text": "New ASN in the list: Viva Armenia CJSC (AS42109)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS42688",
+    "text": "New ASN in the list: Armenian Card (ArCa) CJSC (AS42688)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS42779",
+    "text": "New ASN in the list: Azerfon LLC (AS42779)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS42991",
+    "text": "New ASN in the list: BioNet LLC (AS42991)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS44153",
+    "text": "New ASN in the list: SHTE LLC (AS44153)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS44725",
+    "text": "New ASN in the list: Sinam LLC (AS44725)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS44778",
+    "text": "New ASN in the list: \"Enterprise Incubator\" Foundation (AS44778)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS47642",
+    "text": "New ASN in the list: AI Dynamics LLC (AS47642)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS47975",
+    "text": "New ASN in the list: Supercom LLC (AS47975)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48008",
+    "text": "New ASN in the list: Harmony Information Technologies and Education Development Fund (AS48008)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48244",
+    "text": "New ASN in the list: HS Cloud LLC (AS48244)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48542",
+    "text": "New ASN in the list: START TELECOM Mahdud Masuliyyatli Camiyyati (AS48542)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48675",
+    "text": "New ASN in the list: Diananet LLC (AS48675)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48830",
+    "text": "New ASN in the list: TransEuroCom LLC (AS48830)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48860",
+    "text": "New ASN in the list: \"Arm Telecom\" LLC (AS48860)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS48861",
+    "text": "New ASN in the list: Fnet LLC (AS48861)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS49037",
+    "text": "New ASN in the list: A1 TELECOM LLC (AS49037)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS49345",
+    "text": "New ASN in the list: BEEONLINE OJSC (AS49345)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS49482",
+    "text": "New ASN in the list: Telecom Armenia OJSC (AS49482)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50250",
+    "text": "New ASN in the list: ARMECONOMBANK OJSC (AS50250)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50274",
+    "text": "New ASN in the list: Alfanet LLC (AS50274)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50371",
+    "text": "New ASN in the list: Seabak LLC (AS50371)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50496",
+    "text": "New ASN in the list: ARARATBANK OJSC (AS50496)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50623",
+    "text": "New ASN in the list: Infotech LLC (AS50623)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50635",
+    "text": "New ASN in the list: Skynet Telecom LLC (AS50635)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS50959",
+    "text": "New ASN in the list: BEEONLINE OJSC (AS50959)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51090",
+    "text": "New ASN in the list: \"Internet Society\" Public Organisation (AS51090)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51225",
+    "text": "New ASN in the list: Armenian internet traffic exchange 'Armix' foundation (AS51225)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51342",
+    "text": "New ASN in the list: Hachn ISP LLC (AS51342)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51354",
+    "text": "New ASN in the list: \"Internet Society\" Public Organisation (AS51354)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51493",
+    "text": "New ASN in the list: National Ehealth Operator CJSC (AS51493)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS51693",
+    "text": "New ASN in the list: Supercom LLC (AS51693)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS52160",
+    "text": "New ASN in the list: VTB Armenia Bank CJSC (AS52160)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS56561",
+    "text": "New ASN in the list: Central Bank of the Republic of Armenia (AS56561)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS56862",
+    "text": "New ASN in the list: GLOBALTECH LLC (AS56862)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS56956",
+    "text": "New ASN in the list: Volkof-Inform Ltd. (AS56956)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS56974",
+    "text": "New ASN in the list: State Revenue Committee of the Republic of Armenia (AS56974)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57162",
+    "text": "New ASN in the list: Ardshinbank, OJSC (AS57162)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57203",
+    "text": "New ASN in the list: LIR LLC (AS57203)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57206",
+    "text": "New ASN in the list: Global Credit CJSC (AS57206)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57293",
+    "text": "New ASN in the list: AG Telekom MMC. (AS57293)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57491",
+    "text": "New ASN in the list: KIM-RAY Ltd. (AS57491)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57675",
+    "text": "New ASN in the list: Seabak LLC (AS57675)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS57849",
+    "text": "New ASN in the list: Flex Tech LLC (AS57849)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS59704",
+    "text": "New ASN in the list: SHAKH Telecom LLC (AS59704)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS60258",
+    "text": "New ASN in the list: ENGINET LLC (AS60258)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS61304",
+    "text": "New ASN in the list: Connect CJSC (AS61304)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS6682",
+    "text": "New ASN in the list: GNC-Alfa CJSC (AS6682)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS8226",
+    "text": "New ASN in the list: Arpinet LLC (AS8226)"
+   },
+   {
+    "kind": "asn_new",
+    "src": "AS8814",
+    "text": "New ASN in the list: Aztelekom LLC (AS8814)"
+   }
+  ]
  },
  "recent": [
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Aztelekom LLC (AS8814)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Arpinet LLC (AS8226)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GNC-Alfa CJSC (AS6682)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Connect CJSC (AS61304)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ENGINET LLC (AS60258)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SHAKH Telecom LLC (AS59704)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Flex Tech LLC (AS57849)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Seabak LLC (AS57675)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: KIM-RAY Ltd. (AS57491)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AG Telekom MMC. (AS57293)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Global Credit CJSC (AS57206)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: LIR LLC (AS57203)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ardshinbank, OJSC (AS57162)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: State Revenue Committee of the Republic of Armenia (AS56974)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Volkof-Inform Ltd. (AS56956)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GLOBALTECH LLC (AS56862)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Central Bank of the Republic of Armenia (AS56561)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: VTB Armenia Bank CJSC (AS52160)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Supercom LLC (AS51693)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: National Ehealth Operator CJSC (AS51493)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Internet Society\" Public Organisation (AS51354)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Hachn ISP LLC (AS51342)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Armenian internet traffic exchange 'Armix' foundation (AS51225)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Internet Society\" Public Organisation (AS51090)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BEEONLINE OJSC (AS50959)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Skynet Telecom LLC (AS50635)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Infotech LLC (AS50623)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ARARATBANK OJSC (AS50496)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Seabak LLC (AS50371)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Alfanet LLC (AS50274)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ARMECONOMBANK OJSC (AS50250)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Telecom Armenia OJSC (AS49482)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BEEONLINE OJSC (AS49345)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: A1 TELECOM LLC (AS49037)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fnet LLC (AS48861)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Arm Telecom\" LLC (AS48860)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: TransEuroCom LLC (AS48830)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Diananet LLC (AS48675)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: START TELECOM Mahdud Masuliyyatli Camiyyati (AS48542)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HS Cloud LLC (AS48244)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Harmony Information Technologies and Education Development Fund (AS48008)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Supercom LLC (AS47975)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AI Dynamics LLC (AS47642)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Enterprise Incubator\" Foundation (AS44778)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Sinam LLC (AS44725)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SHTE LLC (AS44153)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BioNet LLC (AS42991)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azerfon LLC (AS42779)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Armenian Card (ArCa) CJSC (AS42688)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Viva Armenia CJSC (AS42109)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GLOBALTECH LLC (AS42031)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Connect CJSC (AS41997)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Crossnet LLC (AS39863)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: TEAM-HOST LLC (AS39854)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Metronet LLC (AS39397)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: LIR LLC (AS39355)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SMAYL SISTEMS LLC (AS39344)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ultel LLC (AS39280)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Uninet LLC (AS39232)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Telecom Armenia OJSC (AS35303)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"SMART SISTEMZ TECHNOLOJI\" MMM (AS34876)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: MEDIA LIFE LLC (AS34492)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Aztelekom LLC (AS34170)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Arpinet LLC (AS34083)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Viva Armenia CJSC (AS33852)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azercell Telecom Ltd (AS31721)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AZEDUNET LLC (AS29584)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Aztelekom LLC (AS28787)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ELFIBER LLC (AS219485)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"TTC SERVICE\" LLC (AS219343)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SKY NET Telecom LLC (AS219323)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: VALI GROUP LLC (AS219322)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS219310)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: UNI COMMUNICATION SERVICES LLC (AS219253)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ALTAIR LLC (AS219209)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Turkcell LLC (AS219159)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: MARTIROSYAN MOVSES ARMEN (AS219140)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: YAPI KREDI BANK AZERBAIJAN CJSC (AS219083)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HayPost CJSC (AS219028)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Lagom Products LLC (AS218976)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AZFIBER-X MMC (AS218873)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ultranet LLC (AS218847)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azintelnet LLC (AS218825)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ATF TELECOM GROUP LLC (AS218787)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: DoLifeBetter LLC (AS218702)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ulduz Net LLC (AS218658)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Goodnet LLC (AS218650)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Modep LLC (AS218547)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Uplink LLC (AS218526)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Hertz Telecom LLC (AS218525)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: JEZA CLOUD LLC (AS218452)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Nariman Mammadov (AS218346)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Kapital Telecom LLC (AS218237)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: FOR UNITY LLC (AS216400)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BLINE LLC (AS216259)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: NEOTELECOM SERVICES LLC (AS216232)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Alnet LLC (AS216231)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HYPERNET LLC (AS216165)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ART-NET LLC (AS216086)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Proitlab LLC (AS216058)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GLOBALTECH LLC (AS215972)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Delta Telecom Ltd (AS215858)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: UNIBANK Commercial Bank Open Joint-Stock Company (AS215800)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Unibank OJSC (AS215719)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Crossnet LLC (AS215644)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Hingshabti LLC (AS215501)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: LikeNet LLC (AS215421)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: VIGEN PETROSYAN trading as \"SAMVELI\" (AS215416)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azeuronet LLC (AS215374)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fast Net Technology LLC (AS215328)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Nest LLC (AS215284)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: OnlineNet LLC (AS215157)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Delta Telecom Ltd (AS215148)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GLOBALTECH LLC (AS215102)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Volt Internet LLC (AS215076)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Nardaran Invest LLC (AS215056)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS215017)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GO LINE LLC (AS214990)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Artsakhbank CJSC (AS214977)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EMIRASLAN EMIRASLANOV (AS214946)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Yotta Network LLC (AS214869)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Prostie Reshenia LLC (AS214729)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Epro.io LLC (AS214682)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AZNET TECHNOLOGIES LLC (AS214489)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Araznet Technologies LLC (AS214468)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Converse Bank CJSC (AS214287)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: NeoMetals LLC (AS214198)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: OUR Technology LLC (AS213881)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GetNet LLC (AS213827)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: TTNET LLC (AS213670)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Rahat Telecom LLC (AS213402)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fibernet LLC (AS213398)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Xalq Bank OJSC (AS213379)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AZETEL LLC (AS213328)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Faraon-1 LLC (AS213139)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"DIGITAIN\" LLC (AS213134)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Meganet HD LLC (AS212898)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ACBA Bank OJSC (AS212749)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BitCommand LLC (AS212552)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Volo LLC (AS212505)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: House Net LLC (AS212183)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: A2Z Technologies CJSC (AS211995)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Bank Respublika OJSC (AS211960)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Narek Tadevosyan (AS211944)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azersun Holding LLC (AS211937)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Ingo Armenia\" Insurance CJSC (AS211793)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: INNET.AZ LTD (AS211790)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Cavansir Ramazanov (AS211780)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: CENTRAL ELECTORAL COMMISION OF THE REPUBLIC OF ARMENIA (AS211704)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azerlotereya Open Joint Stock Company (AS211143)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ucom CJSC (AS211092)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Netsys JV LLC (AS21104)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ISP SUPPORT LLC (AS210677)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Innovation and Digital Development Agency (Public Legal Entity) (AS210665)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Armenian Branch of \"Synergy International Systems\" Joint-Stock Company Separated Subdivision (AS210520)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fibernet LLC (AS210419)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AMIOBANK CJSC (AS210381)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Arpinet LLC (AS210315)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Kapital Bank OJSC (AS210293)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EuroNet Telecom LLC (AS210260)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ISP SUPPORT LLC (AS210147)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Novalink LLC (AS210131)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Armcom LLC (AS209778)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"PASHA TECHNOLOGY\" LLC (AS209700)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azintex.com LLC (AS209489)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: The Central Bank of the Republic of Azerbaijan (AS209374)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Bulud Telecom LLC (AS209360)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GSLINE LLC (AS209262)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EKENG CJSC (AS209176)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Azerbaijan Airlines\" Closed Joint Stock Company (AS209089)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: INTERNET KOMUNIKATSION TSANTSER LLC (AS208997)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Nikita Mobile.Ltd (AS208526)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fiberon LLC (AS208439)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ARTKOM.NET LLC (AS208410)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: UTC LLC (AS208339)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fast Bank CJSC (AS208081)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ACHON LLC (AS207991)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: TINS LLC (AS207980)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AZETEL LLC (AS207922)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Virus Net\" LLC (AS207810)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HOSTART LLC (AS207619)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: VXSOFT LLC (AS207400)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: CASPEL LLC (AS207251)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Bargavachokh Tsantser LLC (AS207081)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HAYKAZ GHANDILYAN ANDRANIKI Private Entrepreneur (AS206783)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Diananet LLC (AS206748)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Cabarco LLC (AS206543)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Team Host LLC (AS206230)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ID Processing LLC (AS205605)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Flexnet LLC (AS205547)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Fnet LLC (AS205368)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: NetPoint LLC (AS205367)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: MAXINET LLC (AS205317)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: RAYONLINE LLC (AS205293)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Interlink LLC (AS205277)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: STARROKETS LLC (AS205261)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: QoldenPey OJSC (AS205258)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Sparktel LLC (AS204986)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Erik Mosinyan (AS204966)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Xalq Sigorta\" OJSC (AS204840)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: EVOCABANK CJSC (AS204620)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"Homenet\" LLC (AS204267)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Byblos Armenian Bank CJSC (AS204241)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"South Caucasus Railway\" CJSC (AS204194)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: International Bank of Azerbaijan OJSC (AS204016)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AzFiberNet LLC (AS203971)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Sajad Charipour (AS203739)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Araz Tech LLC (AS203680)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GSP LLC (AS203622)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: IM ID CJSC (AS202740)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ID Bank CJSC (AS202515)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BitCommand LLC (AS202269)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Arpinet LLC (AS201986)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"DIGITAIN\" LLC (AS201921)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: ISP SUPPORT LLC (AS201884)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: INECOBANK CJSC (AS201639)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"EDGEAM\" LLC (AS201589)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azericard LLC (AS201390)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: NET.SERVICES LLC (AS201373)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: YOURnet LLC (AS201363)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Mirkamal Emiraslanov (AS201300)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Mushegh Baghdasaryan (AS201219)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Caspian Telecom LLC (AS201167)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ameriabank CJSC (AS201063)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Manushak Galoyan (AS201039)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Arpinet LLC (AS200896)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AzInTelecom LLC (AS200729)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Megalink LLC (AS200650)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SELNET LLC (AS200446)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Viva Armenia CJSC (AS200205)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azerlink LLC (AS200196)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Super Optik Tech LLC (AS200192)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: IZONE LLC (AS200154)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: NAXTEL Limited Liability Company (AS200012)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Flexnet LLC (AS199987)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Metronet LLC (AS199985)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: IWS NETWORKS LLC (AS199968)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: The Educational Center for Internet and New Technologies of the Nakhchivan Autonomous Republic (AS199731)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Maxinet LLC (AS199698)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AMWEB LLC (AS199673)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Regionnet LLC (AS199620)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: HMC Company LLC (AS199444)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Azertelecom LLC (AS199311)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Lagom Products LLC (AS199180)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: SOFT CONSTRUCT CJSC (AS199062)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Abonnet LLC (AS198828)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Antranik Wartanian (AS198767)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Perine Gevorgyan (AS198480)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Migtelecom LLC (AS198441)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: I-NET LLC (AS198265)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Vernon LLC (AS198177)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Ucom CJSC (AS197834)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: BAKCELL LLC (AS197830)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Dzoraghbyur Complex LLC (AS197805)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: OFFICE OF THE PRIME-MINISTER OF THE REPUBLIC OF ARMENIA STATE BODY (AS197497)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: TERMINAL PAHEST LLC (AS197189)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: Teleport LLC (AS196961)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: AzInTelecom LLC (AS196821)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: GNC-Alfa CJSC (AS196709)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: LIR LLC (AS16190)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: INTRA Network Systems Ltd (AS15815)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"AZERONLINE LTD\" JOINT ENTERPRISE (AS15723)"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "asn_new",
+   "text": "New ASN in the list: \"AZ-EVRO TEL\" LLC (AS13099)"
+  },
   {
    "date": "2026-11-05",
    "kind": "link_added",
