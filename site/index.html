@@ -313,8 +313,8 @@ function visibleSets(){
   const showIX = document.getElementById('showIX').checked;
   const keep = new Set(nodesAll.filter(n => n.grp==='GE' || (n.grp==='IX' ? showIX : (showF && !(hideLeaf && (deg.get(n.id)||0)<2)))).map(n=>n.id));
   const showS = document.getElementById('showStale').checked;
-  let links = linksAll.filter(l=>keep.has(l.src)&&keep.has(l.dst)&&(showS||!l.stale));
-  const used = new Set(links.flatMap(l=>[l.src,l.dst]));
+     const isHomeId = id => N.get(id)?.grp==='GE';
+     let links = linksAll.filter(l=>keep.has(l.src)&&keep.has(l.dst)&&(showS||!l.stale)&&(isHomeId(l.src)||isHomeId(l.dst)));  const used = new Set(links.flatMap(l=>[l.src,l.dst]));
   return {nodes: nodesAll.filter(n=>keep.has(n.id) && (n.grp==='GE' || used.has(n.id))), links};
 }
 const CENTER = {GE:[-0.2,-0.1], AZ:[0.22,-0.02], AM:[-0.02,0.22]};
