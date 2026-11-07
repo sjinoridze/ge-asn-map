@@ -268,3 +268,572 @@
 2026-11-06	asn_new	New ASN in the list: GNC-Alfa CJSC (AS6682)
 2026-11-06	asn_new	New ASN in the list: Arpinet LLC (AS8226)
 2026-11-06	asn_new	New ASN in the list: Aztelekom LLC (AS8814)
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS214946) now takes transit from Hop179 OU (AS11967), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from Hop179 OU (AS11967), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS14789) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	LIR LLC (AS16190) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	SOFT CONSTRUCT CJSC (AS199062) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Regionnet LLC (AS199620) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Maxinet LLC (AS199698) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS200205) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Ameriabank CJSC (AS201063) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS201921) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS201986) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	IM ID CJSC (AS202740) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	RFE/RL INC. (AS202756) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Byblos Armenian Bank CJSC (AS204241) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Fnet LLC (AS205368) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Cabarco LLC (AS206543) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	SC IP Limited (AS207092) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	"Virus Net" LLC (AS207810) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Nikita Mobile.Ltd (AS208526) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	INTERNET KOMUNIKATSION TSANTSER LLC (AS208997) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	ISP SUPPORT LLC (AS210147) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Armenian Branch of "Synergy International Systems" Joint-Stock Company Separated Subdivision (AS210520) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Netsys JV LLC (AS21104) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	CENTRAL ELECTORAL COMMISION OF THE REPUBLIC OF ARMENIA (AS211704) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	ACBA Bank OJSC (AS212749) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	NeoMetals LLC (AS214198) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Converse Bank CJSC (AS214287) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Hingshabti LLC (AS215501) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Ultranet LLC (AS218847) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Zhejiang Taobao Network Co. Ltd (AS24429) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Imagine Communications Group Limited (AS25441) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS35303) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Crossnet LLC (AS39863) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Armenian Card (ArCa) CJSC (AS42688) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	BioNet LLC (AS42991) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Supercom LLC (AS47975) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Siemens Industry Software Limited (AS48406) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	A1 TELECOM LLC (AS49037) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Telecommunication Infrastructure Company (AS49666) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	QBIC COMMUNICATIONS FZCO (AS49832) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	ARMECONOMBANK OJSC (AS50250) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	ARARATBANK OJSC (AS50496) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	"Internet Society" Public Organisation (AS51090) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Armenian internet traffic exchange 'Armix' foundation (AS51225) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	RETN AM Limited Liability Company (AS51327) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	National Ehealth Operator CJSC (AS51493) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Supercom LLC (AS51693) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	VTB Armenia Bank CJSC (AS52160) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Government Communications Network (AS55330) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Central Bank of the Republic of Armenia (AS56561) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	State Revenue Committee of the Republic of Armenia (AS56974) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	Ardshinbank, OJSC (AS57162) now takes transit from Telecom Armenia OJSC (AS12297), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from PJSC Rostelecom (AS12389), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Vodafone Group PLC (AS1273), confirmed over 2 runs
+2026-11-07	link_added	HMC Company LLC (AS199444) now takes transit from Netia SA (AS12741), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from IT.Gate S.p.A. (AS12779), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	"EDGEAM" LLC (AS201589) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS213134) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Supercom LLC (AS51693) now takes transit from Arelion Sweden AB (AS1299), confirmed over 2 runs
+2026-11-07	link_added	Seabak LLC (AS50371) now takes transit from "AZ-EVRO TEL" LLC (AS13099), confirmed over 2 runs
+2026-11-07	link_added	Azericard LLC (AS201390) now takes transit from Cloudflare Inc. (AS13335), confirmed over 2 runs
+2026-11-07	link_added	INECOBANK CJSC (AS201639) now takes transit from Cloudflare Inc. (AS13335), confirmed over 2 runs
+2026-11-07	link_added	ID Bank CJSC (AS202515) now takes transit from Cloudflare Inc. (AS13335), confirmed over 2 runs
+2026-11-07	link_added	International Bank of Azerbaijan OJSC (AS204016) now takes transit from Cloudflare Inc. (AS13335), confirmed over 2 runs
+2026-11-07	link_added	Azercell Telecom Ltd (AS31721) now takes transit from Cloudflare Inc. (AS13335), confirmed over 2 runs
+2026-11-07	link_added	Lagom Products LLC (AS199180) now takes transit from GSL Networks Pty LTD (AS137409), confirmed over 2 runs
+2026-11-07	link_added	"EDGEAM" LLC (AS201589) now takes transit from IPTP LIMITED (AS140951), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from BR.Digital Telecom (AS14840), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from BR.Digital Telecom (AS14840), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from BR.Digital Telecom (AS14840), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from NTS workspace AG (AS15576), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from CETIN Ltd. Belgrade (AS15958), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from CETIN Ltd. Belgrade (AS15958), confirmed over 2 runs
+2026-11-07	link_added	SHTE LLC (AS44153) now takes transit from LIR LLC (AS16190), confirmed over 2 runs
+2026-11-07	link_added	"EDGEAM" LLC (AS201589) now takes transit from Cogent Communications LLC (AS174), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS213134) now takes transit from Cogent Communications LLC (AS174), confirmed over 2 runs
+2026-11-07	link_added	GLOBALTECH LLC (AS215102) now takes transit from Cogent Communications LLC (AS174), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Cogent Communications LLC (AS174), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Cogent Communications LLC (AS174), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Pakistan Telecommuication company limited (AS17557), confirmed over 2 runs
+2026-11-07	link_added	365.partners INC (AS198178) now takes transit from GNC-Alfa CJSC (AS196709), confirmed over 2 runs
+2026-11-07	link_added	Edgenext Legend Dynasty Pte. Ltd. (AS139057) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS14789) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	INTRA Network Systems Ltd (AS15815) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	BAKCELL LLC (AS197830) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	IZONE LLC (AS200154) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	AzInTelecom LLC (AS200729) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	GSP LLC (AS203622) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Araz Tech LLC (AS203680) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	AzFiberNet LLC (AS203971) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	"Xalq Sigorta" OJSC (AS204840) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	CASPEL LLC (AS207251) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	"Azerbaijan Airlines" Closed Joint Stock Company (AS209089) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Bulud Telecom LLC (AS209360) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	"PASHA TECHNOLOGY" LLC (AS209700) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Kapital Bank OJSC (AS210293) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Innovation and Digital Development Agency (Public Legal Entity) (AS210665) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Azersun Holding LLC (AS211937) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	A2Z Technologies CJSC (AS211995) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Xalq Bank OJSC (AS213379) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Rahat Telecom LLC (AS213402) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Nest LLC (AS215284) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	UNIBANK Commercial Bank Open Joint-Stock Company (AS215800) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	NEOTELECOM SERVICES LLC (AS216232) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Goodnet LLC (AS218650) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Ulduz Net LLC (AS218658) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	SKY NET Telecom LLC (AS219323) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Zhejiang Taobao Network Co. Ltd (AS24429) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	AZEDUNET LLC (AS29584) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Uninet LLC (AS39232) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Ultel LLC (AS39280) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Azerfon LLC (AS42779) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Sinam LLC (AS44725) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Meteverse Limited (AS54994) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	AG Telekom MMC. (AS57293) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	ENGINET LLC (AS60258) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	Schlumberger Limited (AS72) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS219310) now takes transit from Vladyslav Koba (AS197324), confirmed over 2 runs
+2026-11-07	link_added	STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977) now takes transit from Radware Ltd (AS198949), confirmed over 2 runs
+2026-11-07	link_added	Vitalijs Jurkevics (AS199529) now takes transit from Lagom Products LLC (AS199180), confirmed over 2 runs
+2026-11-07	link_added	Earth Wide Service Limited (AS218700) now takes transit from Lagom Products LLC (AS199180), confirmed over 2 runs
+2026-11-07	link_added	Nariman Mammadov (AS218346) now takes transit from Akronic Network LTDA (AS199829), confirmed over 2 runs
+2026-11-07	link_added	Abonnet LLC (AS198828) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	GSP LLC (AS203622) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	Sparktel LLC (AS204986) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	Flexnet LLC (AS205547) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	ARTKOM.NET LLC (AS208410) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	Volt Internet LLC (AS215076) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	Alnet LLC (AS216231) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	BLINE LLC (AS216259) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	Kapital Telecom LLC (AS218237) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	JEZA CLOUD LLC (AS218452) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	"SMART SISTEMZ TECHNOLOJI" MMM (AS34876) now takes transit from IZONE LLC (AS200154), confirmed over 2 runs
+2026-11-07	link_added	SECUREEND LTD (AS208417) now takes transit from AzInTelecom LLC (AS200729), confirmed over 2 runs
+2026-11-07	link_added	MITIGATOR CLOUD LLC (AS43048) now takes transit from "EDGEAM" LLC (AS201589), confirmed over 2 runs
+2026-11-07	link_added	Dzoraghbyur Complex LLC (AS197805) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	I-NET LLC (AS198265) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Regionnet LLC (AS199620) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS200896) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Interlink LLC (AS205277) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	TINS LLC (AS207980) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	ACHON LLC (AS207991) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Armcom LLC (AS209778) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS210315) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Artsakhbank CJSC (AS214977) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS34083) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS8226) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS212552) now takes transit from BitCommand LLC (AS202269), confirmed over 2 runs
+2026-11-07	link_added	Team Host LLC (AS206230) now takes transit from Chernyshov Aleksandr Aleksandrovich (AS202984), confirmed over 2 runs
+2026-11-07	link_added	Flexnet LLC (AS205547) now takes transit from GSP LLC (AS203622), confirmed over 2 runs
+2026-11-07	link_added	INNET.AZ LTD (AS211790) now takes transit from GSP LLC (AS203622), confirmed over 2 runs
+2026-11-07	link_added	Turkcell LLC (AS219159) now takes transit from GSP LLC (AS203622), confirmed over 2 runs
+2026-11-07	link_added	MAXINET LLC (AS205317) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	NetPoint LLC (AS205367) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	GO LINE LLC (AS214990) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	NEOTELECOM SERVICES LLC (AS216232) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	UNI COMMUNICATION SERVICES LLC (AS219253) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	ELFIBER LLC (AS219485) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	Metronet LLC (AS39397) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	Seabak LLC (AS57675) now takes transit from AzFiberNet LLC (AS203971), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS202269) now takes transit from The Constant Company LLC (AS20473), confirmed over 2 runs
+2026-11-07	link_added	House Net LLC (AS212183) now takes transit from Fnet LLC (AS205368), confirmed over 2 runs
+2026-11-07	link_added	Fnet LLC (AS48861) now takes transit from Fnet LLC (AS205368), confirmed over 2 runs
+2026-11-07	link_added	GO LINE LLC (AS214990) now takes transit from Flexnet LLC (AS205547), confirmed over 2 runs
+2026-11-07	link_added	ATF TELECOM GROUP LLC (AS218787) now takes transit from Flexnet LLC (AS205547), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from Lungu Stefan Gabriel (AS205941), confirmed over 2 runs
+2026-11-07	link_added	Data Campus Limited (AS215929) now takes transit from Team Host LLC (AS206230), confirmed over 2 runs
+2026-11-07	link_added	ISP SUPPORT LLC (AS210677) now takes transit from Amarutu Technology Ltd (AS206264), confirmed over 2 runs
+2026-11-07	link_added	The Central Bank of the Republic of Azerbaijan (AS209374) now takes transit from STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977), confirmed over 2 runs
+2026-11-07	link_added	AZEDUNET LLC (AS29584) now takes transit from STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977), confirmed over 2 runs
+2026-11-07	link_added	GLOBALTECH LLC (AS42031) now takes transit from Transroute Telecom LTD (AS207351), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from CJSC RASCOM (AS20764), confirmed over 2 runs
+2026-11-07	link_added	Full House LLC (AS208943) now takes transit from Caucasus Online Ltd. (AS20771), confirmed over 2 runs
+2026-11-07	link_added	AZETEL LLC (AS213328) now takes transit from AZETEL LLC (AS207922), confirmed over 2 runs
+2026-11-07	link_added	RAYONLINE LLC (AS205293) now takes transit from UTC LLC (AS208339), confirmed over 2 runs
+2026-11-07	link_added	HAYKAZ GHANDILYAN ANDRANIKI Private Entrepreneur (AS206783) now takes transit from UTC LLC (AS208339), confirmed over 2 runs
+2026-11-07	link_added	GSLINE LLC (AS209262) now takes transit from UTC LLC (AS208339), confirmed over 2 runs
+2026-11-07	link_added	SMAYL SISTEMS LLC (AS39344) now takes transit from UTC LLC (AS208339), confirmed over 2 runs
+2026-11-07	link_added	EuroNet Telecom LLC (AS210260) now takes transit from ARTKOM.NET LLC (AS208410), confirmed over 2 runs
+2026-11-07	link_added	Faraon-1 LLC (AS213139) now takes transit from Bulud Telecom LLC (AS209360), confirmed over 2 runs
+2026-11-07	link_added	Azeuronet LLC (AS215374) now takes transit from Bulud Telecom LLC (AS209360), confirmed over 2 runs
+2026-11-07	link_added	Nariman Mammadov (AS218346) now takes transit from iFog GmbH (AS209533), confirmed over 2 runs
+2026-11-07	link_added	Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993) now takes transit from GEANT Vereniging (AS20965), confirmed over 2 runs
+2026-11-07	link_added	Institute for Informatics and Automation Problems (AS47623) now takes transit from GEANT Vereniging (AS20965), confirmed over 2 runs
+2026-11-07	link_added	ISP SUPPORT LLC (AS201884) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	Interlink LLC (AS205277) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	HAYKAZ GHANDILYAN ANDRANIKI Private Entrepreneur (AS206783) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	UTC LLC (AS208339) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	Novalink LLC (AS210131) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	HYPERNET LLC (AS216165) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	Hachn ISP LLC (AS51342) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	KIM-RAY Ltd. (AS57491) now takes transit from ISP SUPPORT LLC (AS210147), confirmed over 2 runs
+2026-11-07	link_added	"EDGEAM" LLC (AS201589) now takes transit from EdgeCenter LLC (AS210756), confirmed over 2 runs
+2026-11-07	link_added	Mushegh Baghdasaryan (AS201219) now takes transit from Narek Tadevosyan (AS211944), confirmed over 2 runs
+2026-11-07	link_added	Connect CJSC (AS41997) now takes transit from A2Z Technologies CJSC (AS211995), confirmed over 2 runs
+2026-11-07	link_added	Connect CJSC (AS61304) now takes transit from A2Z Technologies CJSC (AS211995), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS219310) now takes transit from Johannes Ernst (AS212895), confirmed over 2 runs
+2026-11-07	link_added	Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993) now takes transit from GEANT Vereniging (AS21320), confirmed over 2 runs
+2026-11-07	link_added	Institute for Informatics and Automation Problems (AS47623) now takes transit from GEANT Vereniging (AS21320), confirmed over 2 runs
+2026-11-07	link_added	Mirkamal Emiraslanov (AS201300) now takes transit from EMIRASLAN EMIRASLANOV (AS215017), confirmed over 2 runs
+2026-11-07	link_added	Nariman Mammadov (AS218346) now takes transit from Justas Gudynas (AS215899), confirmed over 2 runs
+2026-11-07	link_added	AMWEB LLC (AS199673) now takes transit from Proitlab LLC (AS216058), confirmed over 2 runs
+2026-11-07	link_added	Nariman Mammadov (AS218346) now takes transit from Viktor Nesmeianov (AS218569), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS219310) now takes transit from Viktor Nesmeianov (AS218569), confirmed over 2 runs
+2026-11-07	link_added	Lagom Products LLC (AS199180) now takes transit from Zenlayer Inc (AS21859), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from SG.GS (AS24482), confirmed over 2 runs
+2026-11-07	link_added	"Internet Society" Public Organisation (AS51354) now takes transit from AFNIC (Association Francaise pour le Nommage Internet en Cooperation) (AS2486), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from WIIT AG (AS24961), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from IP-Max SA (AS25091), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from IP-Max SA (AS25091), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from IP-Max SA (AS25091), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from IP-Max SA (AS25091), confirmed over 2 runs
+2026-11-07	link_added	"AZ-EVRO TEL" LLC (AS13099) now takes transit from Aztelekom LLC (AS28787), confirmed over 2 runs
+2026-11-07	link_added	Bulud Telecom LLC (AS209360) now takes transit from Aztelekom LLC (AS28787), confirmed over 2 runs
+2026-11-07	link_added	Kaopu Cloud HK Limited (AS138915) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS14789) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	INTRA Network Systems Ltd (AS15815) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Teleport LLC (AS196961) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS199311) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	G-Core Labs S.A. (AS199524) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	The Educational Center for Internet and New Technologies of the Nakhchivan Autonomous Republic (AS199731) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	IZONE LLC (AS200154) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Super Optik Tech LLC (AS200192) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Azerlink LLC (AS200196) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	SELNET LLC (AS200446) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	AzInTelecom LLC (AS200729) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Caspian Telecom LLC (AS201167) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	ICANN (AS20144) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Institute of Information Technologies of National Academy of Science Azerbaijan (AS202993) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	AzFiberNet LLC (AS203971) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	"Xalq Sigorta" OJSC (AS204840) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	State Company of Electro Communications Turkmentelecom (AS20661) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	STATE SERVICE OF SPECIAL COMMUNICATION AND INFORMATION SECURITY OF THE REPUBLIC OF AZERBAIJAN (AS206977) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	CASPEL LLC (AS207251) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	HOSTART LLC (AS207619) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Fiberon LLC (AS208439) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	"Azerbaijan Airlines" Closed Joint Stock Company (AS209089) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Bulud Telecom LLC (AS209360) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Azintex.com LLC (AS209489) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	"PASHA TECHNOLOGY" LLC (AS209700) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Kapital Bank OJSC (AS210293) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Innovation and Digital Development Agency (Public Legal Entity) (AS210665) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Azersun Holding LLC (AS211937) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	7Grid Solutions L.L.C S.O.C (AS212809) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Xalq Bank OJSC (AS213379) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Fibernet LLC (AS213398) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	TTNET LLC (AS213670) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	OUR Technology LLC (AS213881) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	International Mediabay Alliance LLC (AS213912) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Epro.io LLC (AS214682) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Nardaran Invest LLC (AS215056) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS215148) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Fast Net Technology LLC (AS215328) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	UNIBANK Commercial Bank Open Joint-Stock Company (AS215800) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS215858) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	"SMART SISTEMZ TECHNOLOJI" MMM (AS34876) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Metronet LLC (AS39397) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	ICT BULUT BILISIM A.S. (AS47952) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Sindad Network Technology PJSC (AS48551) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	TransEuroCom LLC (AS48830) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	BEEONLINE OJSC (AS49345) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Telecommunication Infrastructure Company (AS49666) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Alfanet LLC (AS50274) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	BEEONLINE OJSC (AS50959) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Opened Joint Stock Company Tojiktelecom (AS51346) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Telephone Network of Ashgabat CJSC (AS51495) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Government Communications Network (AS55330) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Seabak LLC (AS57675) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	SHAKH Telecom LLC (AS59704) now takes transit from Delta Telecom Ltd (AS29049), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from NTT America Inc. (AS2914), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Nine Internet Solutions AG (AS29691), confirmed over 2 runs
+2026-11-07	link_added	HMC Company LLC (AS199444) now takes transit from P4 Sp. z o.o. (AS31242), confirmed over 2 runs
+2026-11-07	link_added	GLOBALTECH LLC (AS215102) now takes transit from Global Network Management Inc (AS31500), confirmed over 2 runs
+2026-11-07	link_added	MEDIA LIFE LLC (AS34492) now takes transit from Global Network Management Inc (AS31500), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from GTT Communications Inc. (AS3257), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Swisscom (Schweiz) AG (AS3303), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Level 3 Parent LLC (AS3356), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Level 3 Parent LLC (AS3356), confirmed over 2 runs
+2026-11-07	link_added	Institute for Informatics and Automation Problems (AS47623) now takes transit from Level 3 Parent LLC (AS3356), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Level 3 Parent LLC (AS3356), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS33852), confirmed over 2 runs
+2026-11-07	link_added	ConnectTTo World Inc trading as Hi-Tech Gateway LLC Armenia branch (AS43845) now takes transit from Viva Armenia CJSC (AS33852), confirmed over 2 runs
+2026-11-07	link_added	Adobe Systems Software Ireland Ltd (AS44786) now takes transit from Viva Armenia CJSC (AS33852), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Hivane Association (AS34019), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Hivane Association (AS34019), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Hivane Association (AS34019), confirmed over 2 runs
+2026-11-07	link_added	"AZ-EVRO TEL" LLC (AS13099) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS13335) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Kaopu Cloud HK Limited (AS138915) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	"AZERONLINE LTD" JOINT ENTERPRISE (AS15723) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	G-Core Labs S.A. (AS199524) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	AzInTelecom LLC (AS200729) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS28787) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Azercell Telecom Ltd (AS31721) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS8814) now takes transit from Aztelekom LLC (AS34170), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from meerfarbig GmbH & Co. KG (AS34549), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from meerfarbig GmbH & Co. KG (AS34549), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from meerfarbig GmbH & Co. KG (AS34549), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Superonline Iletisim Hizmetleri A.S. (AS34984), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from F5 Networks SARL (AS35280), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from F5 Networks SARL (AS35280), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from INETCOM CARRIER LLC (AS35598), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Eurofiber France SAS (AS35625), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from SEACOM Limited (AS37100), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Angola Cables (AS37468), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Angola Cables (AS37468), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Angola Cables (AS37468), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Angola Cables (AS37468), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Network Platforms (PTY) LTD (AS37497), confirmed over 2 runs
+2026-11-07	link_added	Ultel LLC (AS39280) now takes transit from Uninet LLC (AS39232), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from 31173 Services AB (AS39351), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from 31173 Services AB (AS39351), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from 31173 Services AB (AS39351), confirmed over 2 runs
+2026-11-07	link_added	Metronet LLC (AS199985) now takes transit from Metronet LLC (AS39397), confirmed over 2 runs
+2026-11-07	link_added	AZETEL LLC (AS207922) now takes transit from Metronet LLC (AS39397), confirmed over 2 runs
+2026-11-07	link_added	START TELECOM Mahdud Masuliyyatli Camiyyati (AS48542) now takes transit from Metronet LLC (AS39397), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Eurofiber Nederland BV (AS39686), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from Eurofiber Nederland BV (AS39686), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Eurofiber Nederland BV (AS39686), confirmed over 2 runs
+2026-11-07	link_added	Crossnet LLC (AS215644) now takes transit from Crossnet LLC (AS39863), confirmed over 2 runs
+2026-11-07	link_added	Nariman Mammadov (AS218346) now takes transit from Openfactory GmbH (AS41051), confirmed over 2 runs
+2026-11-07	link_added	"EDGEAM" LLC (AS201589) now takes transit from IPTP LTD (AS41095), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from CLARO S.A. (AS4230), confirmed over 2 runs
+2026-11-07	link_added	STARROKETS LLC (AS205261) now takes transit from SIA VEESP (AS42532), confirmed over 2 runs
+2026-11-07	link_added	ALTAIR LLC (AS219209) now takes transit from SIA VEESP (AS42532), confirmed over 2 runs
+2026-11-07	link_added	VXSOFT LLC (AS207400) now takes transit from BioNet LLC (AS42991), confirmed over 2 runs
+2026-11-07	link_added	OFFICE OF THE PRIME-MINISTER OF THE REPUBLIC OF ARMENIA STATE BODY (AS197497) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS201921) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	EVOCABANK CJSC (AS204620) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Fnet LLC (AS205368) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Fast Bank CJSC (AS208081) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	EKENG CJSC (AS209176) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	AMIOBANK CJSC (AS210381) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	House Net LLC (AS212183) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Volo LLC (AS212505) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	ACBA Bank OJSC (AS212749) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Meganet HD LLC (AS212898) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	VIGEN PETROSYAN trading as "SAMVELI" (AS215416) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Crossnet LLC (AS215644) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	FOR UNITY LLC (AS216400) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS33852) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Crossnet LLC (AS39863) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS42109) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	AI Dynamics LLC (AS47642) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Diananet LLC (AS48675) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	ARARATBANK OJSC (AS50496) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Infotech LLC (AS50623) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Central Bank of the Republic of Armenia (AS56561) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Synopsys Inc. (AS7809) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Anexia Cloud Solutions GmbH (AS47147), confirmed over 2 runs
+2026-11-07	link_added	Mirkamal Emiraslanov (AS201300) now takes transit from HYEHOST LLC (AS47272), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS219310) now takes transit from HYEHOST LLC (AS47272), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Nessus GmbH (AS47692), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Nessus GmbH (AS47692), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS202269) now takes transit from Turunc Smart Bilgisayar Teknoloji Ve Dis Ticaret Limited Sirketi (AS48011), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS212552) now takes transit from Turunc Smart Bilgisayar Teknoloji Ve Dis Ticaret Limited Sirketi (AS48011), confirmed over 2 runs
+2026-11-07	link_added	Sajad Charipour (AS203739) now takes transit from Asre Pardazeshe Ettelaate Amin Institute (AS48147), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Stadtwerke Feldkirch (AS48362), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS14789) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS196709) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	HLL LLC (AS197068) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	OFFICE OF THE PRIME-MINISTER OF THE REPUBLIC OF ARMENIA STATE BODY (AS197497) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Migtelecom LLC (AS198441) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	SOFT CONSTRUCT CJSC (AS199062) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	AMWEB LLC (AS199673) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	SC IP Limited (AS200348) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Ameriabank CJSC (AS201063) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	YOURnet LLC (AS201363) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	SPRINTHOST.RU LLC (AS201499) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS201921) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	IM ID CJSC (AS202740) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	RFE/RL INC. (AS202756) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"South Caucasus Railway" CJSC (AS204194) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Byblos Armenian Bank CJSC (AS204241) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"Homenet" LLC (AS204267) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	ID Processing LLC (AS205605) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	HAYKAZ GHANDILYAN ANDRANIKI Private Entrepreneur (AS206783) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Bargavachokh Tsantser LLC (AS207081) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	SC IP Limited (AS207092) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	VXSOFT LLC (AS207400) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"Virus Net" LLC (AS207810) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Fast Bank CJSC (AS208081) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	TeamViewer Germany GmbH (AS208175) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Nikita Mobile.Ltd (AS208526) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	INTERNET KOMUNIKATSION TSANTSER LLC (AS208997) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	EKENG CJSC (AS209176) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	GSLINE LLC (AS209262) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Armcom LLC (AS209778) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	WorkTitans B.V. (AS209847) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Novalink LLC (AS210131) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Armenian Branch of "Synergy International Systems" Joint-Stock Company Separated Subdivision (AS210520) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	ACBA Bank OJSC (AS212749) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Meganet HD LLC (AS212898) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	GetNet LLC (AS213827) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	NeoMetals LLC (AS214198) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Converse Bank CJSC (AS214287) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Yotta Network LLC (AS214869) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Artsakhbank CJSC (AS214977) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Proitlab LLC (AS216058) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	ART-NET LLC (AS216086) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	HYPERNET LLC (AS216165) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	FOR UNITY LLC (AS216400) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	MEDIA LIFE LLC (AS34492) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	OOO Sovremennye setevye tekhnologii (AS34879) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Armenian Card (ArCa) CJSC (AS42688) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	SHTE LLC (AS44153) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"Enterprise Incubator" Foundation (AS44778) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	GLB Bulut Teknolojisi Limited Sirketi (AS48207) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Arm Telecom LLC (AS48860) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Fnet LLC (AS48861) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Sperasoft Poland Sp. z o.o. (AS49200) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	ARMECONOMBANK OJSC (AS50250) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	ARARATBANK OJSC (AS50496) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Skynet Telecom LLC (AS50635) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	NVIDIA Ltd (AS50889) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	"Internet Society" Public Organisation (AS51090) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Armenian internet traffic exchange 'Armix' foundation (AS51225) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	VTB Armenia Bank CJSC (AS52160) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Central Bank of the Republic of Armenia (AS56561) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	State Revenue Committee of the Republic of Armenia (AS56974) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Ardshinbank, OJSC (AS57162) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Global Credit CJSC (AS57206) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	KIM-RAY Ltd. (AS57491) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Flex Tech LLC (AS57849) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS6682) now takes transit from GNC-Alfa CJSC (AS49800), confirmed over 2 runs
+2026-11-07	link_added	Volkof-Inform Ltd. (AS56956) now takes transit from Serverel Inc. (AS50245), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from A-Systems Sp. z o.o. (AS50263), confirmed over 2 runs
+2026-11-07	link_added	Lagom Products LLC (AS199180) now takes transit from JSC Selectel (AS50340), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from LWLcom GmbH (AS50629), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Serverius Holding B.V. (AS50673), confirmed over 2 runs
+2026-11-07	link_added	Community DNS Limited (AS42909) now takes transit from "Internet Society" Public Organisation (AS51090), confirmed over 2 runs
+2026-11-07	link_added	"Internet Society" Public Organisation (AS51354) now takes transit from "Internet Society" Public Organisation (AS51090), confirmed over 2 runs
+2026-11-07	link_added	Facebook Inc. (AS63293) now takes transit from Armenian internet traffic exchange 'Armix' foundation (AS51225), confirmed over 2 runs
+2026-11-07	link_added	Unibank OJSC (AS215719) now takes transit from RETN AM Limited Liability Company (AS51327), confirmed over 2 runs
+2026-11-07	link_added	Sperasoft Poland Sp. z o.o. (AS49200) now takes transit from RETN AM Limited Liability Company (AS51327), confirmed over 2 runs
+2026-11-07	link_added	IWS NETWORKS LLC (AS199968) now takes transit from AltusHost B.V. (AS51430), confirmed over 2 runs
+2026-11-07	link_added	Supercom LLC (AS47975) now takes transit from Supercom LLC (AS51693), confirmed over 2 runs
+2026-11-07	link_added	Closed Joint Stock Company AbkhazMedia (AS216300) now takes transit from MIRhosting B.V. (AS52000), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from ParadoxNetworks Limited (AS52025), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Orange S.A. (AS5511), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS13335) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs
+2026-11-07	link_added	Rahat Telecom LLC (AS213402) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs
+2026-11-07	link_added	MEDIA LIFE LLC (AS34492) now takes transit from JSC RetnNet (AS57304), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from NetIX Communications JSC (AS57463), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from NetIX Communications JSC (AS57463), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from NetIX Communications JSC (AS57463), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from NetIX Communications JSC (AS57463), confirmed over 2 runs
+2026-11-07	link_added	Seabak LLC (AS50371) now takes transit from Seabak LLC (AS57675), confirmed over 2 runs
+2026-11-07	link_added	Lagom Products LLC (AS199180) now takes transit from dataforest GmbH (AS58212), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Balkan Internet Exchange Ltd (AS59900), confirmed over 2 runs
+2026-11-07	link_added	Lagom Products LLC (AS199180) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS202269) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS212552) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	DoLifeBetter LLC (AS218702) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	"TTC SERVICE" LLC (AS219343) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Administracion Nacional de Telecomunicaciones (AS6057), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Administracion Nacional de Telecomunicaciones (AS6057), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Exascale Ltd (AS61049), confirmed over 2 runs
+2026-11-07	link_added	BitCommand LLC (AS212552) now takes transit from GLOBALTELEHOST Corp. (AS62563), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from TATA COMMUNICATIONS (AMERICA) INC (AS6453), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from TATA COMMUNICATIONS (AMERICA) INC (AS6453), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from TATA COMMUNICATIONS (AMERICA) INC (AS6453), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Zayo Bandwidth (AS6461), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from Zayo Bandwidth (AS6461), confirmed over 2 runs
+2026-11-07	link_added	Araz Tech LLC (AS203680) now takes transit from Euroweb Romania S.R.L. (AS6663), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Euroweb Romania S.R.L. (AS6663), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from DE-CIX Management GmbH (AS6695), confirmed over 2 runs
+2026-11-07	link_added	Prostie Reshenia LLC (AS214729) now takes transit from TELECOM ITALIA SPARKLE S.p.A. (AS6762), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from TELECOM ITALIA SPARKLE S.p.A. (AS6762), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from TELECOM ITALIA SPARKLE S.p.A. (AS6762), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from GlobalConnect AB (AS6797), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from GlobalConnect AB (AS6797), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from GlobalConnect AB (AS6797), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from GlobalConnect AB (AS6797), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from GlobalConnect AB (AS6797), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Azertelecom LLC (AS196925) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Prostie Reshenia LLC (AS214729) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	GNC-Alfa CJSC (AS49800) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from Hurricane Electric LLC (AS6939), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs
+2026-11-07	link_added	HS Cloud LLC (AS48244) now takes transit from Arpinet LLC (AS8226), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from SYNAPSECOM S.A. Provider of Telecommunications and Internet Services (AS8280), confirmed over 2 runs
+2026-11-07	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from GoCodeIT Inc (AS835), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from atom86 BV (AS8455), confirmed over 2 runs
+2026-11-07	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Iway AG (AS8758), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from Iway AG (AS8758), confirmed over 2 runs
+2026-11-07	link_added	Cloudflare Inc. (AS14789) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS197834) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Migtelecom LLC (AS198441) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	SOFT CONSTRUCT CJSC (AS199062) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	G-Core Labs S.A. (AS199524) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	AMWEB LLC (AS199673) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Maxinet LLC (AS199698) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	SC IP Limited (AS200348) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Ameriabank CJSC (AS201063) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	YOURnet LLC (AS201363) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	"DIGITAIN" LLC (AS201921) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS201986) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	"South Caucasus Railway" CJSC (AS204194) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	"Homenet" LLC (AS204267) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	EVOCABANK CJSC (AS204620) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Fnet LLC (AS205368) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	ID Processing LLC (AS205605) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Cabarco LLC (AS206543) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	SC IP Limited (AS207092) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	"Virus Net" LLC (AS207810) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	TeamViewer Germany GmbH (AS208175) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	UTC LLC (AS208339) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Novalink LLC (AS210131) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS211092) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	CENTRAL ELECTORAL COMMISION OF THE REPUBLIC OF ARMENIA (AS211704) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Narek Tadevosyan (AS211944) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Volo LLC (AS212505) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	ACBA Bank OJSC (AS212749) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	NeoMetals LLC (AS214198) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	LikeNet LLC (AS215421) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Proitlab LLC (AS216058) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Pulk Company for General Trading Communications & Investment Ltd. (AS39216) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Armenian Card (ArCa) CJSC (AS42688) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	BioNet LLC (AS42991) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Viva Armenia CJSC (AS43733) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS44395) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Adobe Systems Software Ireland Ltd (AS44786) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Institute for Informatics and Automation Problems (AS47623) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Harmony Information Technologies and Education Development Fund (AS48008) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Siemens Industry Software Limited (AS48406) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Ardshinbank, OJSC (AS57162) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	Synopsys Inc. (AS7809) now takes transit from Ucom CJSC (AS8932), confirmed over 2 runs
+2026-11-07	link_added	TERMINAL PAHEST LLC (AS197189) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Arpinet LLC (AS201986) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	STARROKETS LLC (AS205261) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	GLOBALTECH LLC (AS215102) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Unibank OJSC (AS215719) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Delta Telecom Ltd (AS29049) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Aztelekom LLC (AS34170) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	MEDIA LIFE LLC (AS34492) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	"Internet Society" Public Organisation (AS51090) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	RETN AM Limited Liability Company (AS51327) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Ucom CJSC (AS8932) now takes transit from RETN Limited (AS9002), confirmed over 2 runs
+2026-11-07	link_added	Azerlotereya Open Joint Stock Company (AS211143) now takes transit from Turk Telekomunikasyon Anonim Sirketi (AS9121), confirmed over 2 runs
+2026-11-07	link_removed	Gonet LLC Tbilisi, Georgia (AS215348) no longer takes transit from PC MAX LLC (AS214176), confirmed over 2 runs
+2026-11-07	link_removed	Murtazali Ustarov trading as Alius (AS207057) no longer takes transit from Latitude.sh LTDA (AS262287), confirmed over 2 runs
+2026-11-07	link_removed	Real Estate of Georgia JSC (AS208603) no longer takes transit from JSC Silknet (AS35805), confirmed over 2 runs
+2026-11-07	link_removed	Foodservice LTD (AS56966) no longer takes transit from JSC Silknet (AS35805), confirmed over 2 runs
