@@ -837,3 +837,9 @@
 2026-11-07	link_removed	Murtazali Ustarov trading as Alius (AS207057) no longer takes transit from Latitude.sh LTDA (AS262287), confirmed over 2 runs
 2026-11-07	link_removed	Real Estate of Georgia JSC (AS208603) no longer takes transit from JSC Silknet (AS35805), confirmed over 2 runs
 2026-11-07	link_removed	Foodservice LTD (AS56966) no longer takes transit from JSC Silknet (AS35805), confirmed over 2 runs
+2026-11-09	link_added	Telecom Armenia OJSC (AS12297) now takes transit from BIT BV (AS12859), confirmed over 2 runs
+2026-11-09	link_added	Azertelecom LLC (AS196925) now takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs
+2026-11-09	link_added	GNC-Alfa CJSC (AS49800) now takes transit from BioNet LLC (AS42991), confirmed over 2 runs
+2026-11-09	link_added	"Internet Society" Public Organisation (AS51090) now takes transit from RETN AM Limited Liability Company (AS51327), confirmed over 2 runs
+2026-11-09	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Exascale Ltd (AS61049), confirmed over 2 runs
+2026-11-09	asn_down	LTD Sky Net (AS199045) stopped announcing routes
