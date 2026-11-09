@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 1 * * *"
   workflow_dispatch:
+    inputs:
+      country:
+        description: "Country to refresh: GE, AZ, AM or ALL (leave empty for today's rotation)"
+        required: false
+        default: ""
   push:
     branches: [main]
     paths: ["site/**"]
@@ -21,13 +26,22 @@ jobs:
   refresh:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 100
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Restore download cache from previous runs
+        uses: actions/cache@v4
+        with:
+          path: cache
+          key: asn-cache-${{ github.run_id }}
+          restore-keys: asn-cache-
       - name: Fetch RIPE data and rebuild
+        env:
+          PEERINGDB_API_KEY: ${{ secrets.PEERINGDB_API_KEY }}
+          FETCH_COUNTRY: ${{ github.event.inputs.country }}
         run: |
           python3 pipeline/fetch.py
           python3 pipeline/build.py

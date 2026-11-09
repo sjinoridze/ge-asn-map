@@ -503,7 +503,10 @@ document.getElementById('copyCsv').onclick = async () => {
 panel(null); renderTable(); build(); fit();
 window.addEventListener('resize', ()=>{ W = mapEl.clientWidth; H = mapEl.clientHeight; });
 
-document.getElementById('builtAt').textContent = DATA.meta.built;
+const CU = DATA.meta.country_updated || {};
+document.getElementById('builtAt').textContent = VIEW==='ALL'
+  ? COUNTRIES.map(c=>c+' '+(CU[c]||'–')).join(' · ')
+  : (CU[VIEW] || DATA.meta.built);
 ['nAsns','nAsns2'].forEach(id=>document.getElementById(id).textContent = ge.length);
 document.getElementById('nStale').textContent = DATA.edges.filter(e=>e.stale).length;
 document.getElementById('nHidden').textContent = ge.filter(n=>!n.inbgp).length;

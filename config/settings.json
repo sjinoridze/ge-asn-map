@@ -14,5 +14,10 @@
   "min_backup_power": 10,
   "confirm_runs": 2,
   "min_ix_members_on_graph": 2,
-  "repo_url": "https://github.com/sjinoridze/ge-asn-map"
+  "repo_url": "https://github.com/sjinoridze/ge-asn-map",
+  "fetch_workers": 6,
+  "request_gap_seconds": 0.25,
+  "whois_max_age_days": 7,
+  "max_fetch_minutes": 70,
+  "rotation_days": 3
 }

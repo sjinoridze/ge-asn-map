@@ -312,11 +312,26 @@ def main():
     state = json.load(open(spath)) if os.path.exists(spath) else None
     today = datetime.date.today().isoformat()
     link_changes = []
+    tpath = os.path.join(CACHE, "today.json")
+    fresh_cc = set(json.load(open(tpath)).get("countries", [])) if os.path.exists(tpath) else set(countries)
+
+    def observed(k):
+        """True when today's data is a new observation for this link (one of its countries was refreshed)"""
+        a, b = k.split("|")
+        return cc_of.get(a) in fresh_cc or cc_of.get(b) in fresh_cc
+
     cur = {f"{e['src']}|{e['dst']}": e for e in edges if e["type"] in ("transit", "mutual") and not e.get("stale")}
     if state is None:
         state = {k: dict(first=today, last=today, streak=CONFIRM, miss=0, on=True, edge=v) for k, v in cur.items()}
     else:
         for k, e in cur.items():
+            if not observed(k):
+                # data for this link was not refreshed today: carry it, count nothing
+                st = state.setdefault(k, dict(first=today, last=today, streak=CONFIRM, miss=0, on=True))
+                st["edge"] = e
+                if not st["on"]:
+                    e["pending"] = True
+                continue
             st = state.setdefault(k, dict(first=today, streak=0, miss=0, on=False))
             if st.get("last") != today:
                 st["streak"] = st.get("streak", 0) + 1
@@ -330,6 +345,16 @@ def main():
             if k in cur:
                 continue
             st = state[k]
+            if not observed(k):
+                if st["on"] and "edge" in st:
+                    g = dict(st["edge"])
+                    g["grace"] = True
+                    gk = tuple(sorted((g["src"], g["dst"])))
+                    if gk not in livepairs:
+                        edges[:] = [x for x in edges if not (x.get("stale") and tuple(sorted((x["src"], x["dst"]))) == gk)]
+                        edges.append(g)
+                        livepairs.add(gk)
+                continue
             if st.get("missed_on") != today:
                 st["miss"] = st.get("miss", 0) + 1
                 st["missed_on"] = today
@@ -493,7 +518,8 @@ def main():
         n["offshore_region"] = bool(n["inbgp"] and nb and n["reg_links"] == 0)
 
     out = dict(nodes=list(nodes.values()), edges=edges,
-               meta=dict(built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), date=today, country=country, countries=countries,
+               meta=dict(built=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), date=today, country=country, countries=countries, refreshed_today=sorted(fresh_cc),
+                         country_updated=(json.load(open(os.path.join(CACHE, "refreshed.json"))) if os.path.exists(os.path.join(CACHE, "refreshed.json")) else {}),
                          live_source="RIPEstat asn-neighbours (RIPE RIS route collectors)", groups=groups,
                          counts=dict(asns=len(GE), in_bgp=len(seen)), caida=caida_src, repo=settings.get("repo_url", ""),
                          facilities=country_facs,
@@ -516,6 +542,8 @@ def main():
             verb = "now takes transit from" if kind == "link_added" else "no longer takes transit from"
             changes["items"].append(dict(kind=kind, src=s_, dst=d_, text=f"{nm(d_)} ({d_}) {verb} {nm(s_)} ({s_}), confirmed over {CONFIRM} runs"))
         for a in sorted(GE):
+            if cc_of.get(a) not in fresh_cc:
+                continue
             was = pn.get(a, {}).get("inbgp")
             if a not in pn:
                 changes["items"].append(dict(kind="asn_new", src=a, text=f"New ASN in the list: {nm(a)} ({a})"))
