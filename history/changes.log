@@ -844,3 +844,14 @@
 2026-11-09	link_added	Telecom Armenia OJSC (AS12297) now takes transit from Exascale Ltd (AS61049), confirmed over 2 runs
 2026-11-09	asn_down	LTD Sky Net (AS199045) stopped announcing routes
 2026-11-09	asn_up	LTD Sky Net (AS199045) started announcing routes
+2026-11-10	link_added	Nariman Mammadov (AS218346) now takes transit from Bobeica Mihaita David (AS218995), confirmed over 2 runs
+2026-11-10	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from HYEHOST LLC (AS47272), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from CETIN Ltd. Belgrade (AS15958), confirmed over 2 runs
+2026-11-10	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Akronic Network LTDA (AS199829), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from SG.GS (AS24482), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Angola Cables (AS37468), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Administracion Nacional de Telecomunicaciones (AS6057), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs
+2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Iway AG (AS8758), confirmed over 2 runs
