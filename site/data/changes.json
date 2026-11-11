@@ -1,79 +1,56 @@
 {
- "built": "2026-11-10 08:30 UTC",
+ "built": "2026-11-11 07:50 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-10",
-  "since": "2026-11-09",
+  "date": "2026-11-11",
+  "since": "2026-11-10",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS218995",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) now takes transit from Bobeica Mihaita David (AS218995), confirmed over 2 runs"
+    "src": "AS41327",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) now takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs"
    },
    {
     "kind": "link_added",
-    "src": "AS47272",
-    "dst": "AS215017",
-    "text": "EMIRASLAN EMIRASLANOV (AS215017) now takes transit from HYEHOST LLC (AS47272), confirmed over 2 runs"
+    "src": "AS43733",
+    "dst": "AS200205",
+    "text": "Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
    },
    {
     "kind": "link_removed",
-    "src": "AS15958",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from CETIN Ltd. Belgrade (AS15958), confirmed over 2 runs"
+    "src": "AS37100",
+    "dst": "AS12297",
+    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs"
    },
    {
-    "kind": "link_removed",
-    "src": "AS199829",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from Akronic Network LTDA (AS199829), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS24482",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from SG.GS (AS24482), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS37468",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Angola Cables (AS37468), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS49434",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS60068",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Datacamp Limited (AS60068), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS6057",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Administracion Nacional de Telecomunicaciones (AS6057), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS8218",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS8758",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Iway AG (AS8758), confirmed over 2 runs"
+    "kind": "asn_down",
+    "src": "AS35303",
+    "text": "Telecom Armenia OJSC (AS35303) stopped announcing routes"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-11",
+   "kind": "asn_down",
+   "text": "Telecom Armenia OJSC (AS35303) stopped announcing routes"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "link_removed",
+   "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "link_added",
+   "text": "Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "link_added",
+   "text": "Ucom CJSC (AS8932) now takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-10",
    "kind": "link_removed",

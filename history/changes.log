@@ -855,3 +855,7 @@
 2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Administracion Nacional de Telecomunicaciones (AS6057), confirmed over 2 runs
 2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs
 2026-11-10	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Iway AG (AS8758), confirmed over 2 runs
+2026-11-11	link_added	Ucom CJSC (AS8932) now takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs
+2026-11-11	link_added	Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-11	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs
+2026-11-11	asn_down	Telecom Armenia OJSC (AS35303) stopped announcing routes
