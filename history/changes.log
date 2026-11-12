@@ -859,3 +859,4 @@
 2026-11-11	link_added	Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
 2026-11-11	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs
 2026-11-11	asn_down	Telecom Armenia OJSC (AS35303) stopped announcing routes
+2026-11-12	link_added	Aleksey Gritsenko (AS218392) now takes transit from STENCLOUD LLC (AS197666), confirmed over 2 runs

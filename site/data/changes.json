@@ -1,36 +1,24 @@
 {
- "built": "2026-11-11 07:50 UTC",
+ "built": "2026-11-12 08:26 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-11",
-  "since": "2026-11-10",
+  "date": "2026-11-12",
+  "since": "2026-11-11",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS41327",
-    "dst": "AS8932",
-    "text": "Ucom CJSC (AS8932) now takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS43733",
-    "dst": "AS200205",
-    "text": "Viva Armenia CJSC (AS200205) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS37100",
-    "dst": "AS12297",
-    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs"
-   },
-   {
-    "kind": "asn_down",
-    "src": "AS35303",
-    "text": "Telecom Armenia OJSC (AS35303) stopped announcing routes"
+    "src": "AS197666",
+    "dst": "AS218392",
+    "text": "Aleksey Gritsenko (AS218392) now takes transit from STENCLOUD LLC (AS197666), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-12",
+   "kind": "link_added",
+   "text": "Aleksey Gritsenko (AS218392) now takes transit from STENCLOUD LLC (AS197666), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-11",
    "kind": "asn_down",
