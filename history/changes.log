@@ -860,3 +860,10 @@
 2026-11-11	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from SEACOM Limited (AS37100), confirmed over 2 runs
 2026-11-11	asn_down	Telecom Armenia OJSC (AS35303) stopped announcing routes
 2026-11-12	link_added	Aleksey Gritsenko (AS218392) now takes transit from STENCLOUD LLC (AS197666), confirmed over 2 runs
+2026-11-14	link_added	Adobe Systems Software Ireland Ltd (AS44786) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs
+2026-11-14	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from BIT BV (AS12859), confirmed over 2 runs
+2026-11-14	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from CETIN Ltd. Belgrade (AS15958), confirmed over 2 runs
+2026-11-14	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from Nessus GmbH (AS47692), confirmed over 2 runs
+2026-11-14	link_removed	Ucom CJSC (AS8932) no longer takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs
+2026-11-14	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from Exascale Ltd (AS61049), confirmed over 2 runs
+2026-11-14	asn_new	New ASN in the list: NUMLOCK LLC (AS218099)
