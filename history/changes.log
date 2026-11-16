@@ -868,3 +868,6 @@
 2026-11-14	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from Exascale Ltd (AS61049), confirmed over 2 runs
 2026-11-14	asn_new	New ASN in the list: NUMLOCK LLC (AS218099)
 2026-11-15	link_added	Gonet LLC Tbilisi, Georgia (AS215348) now takes transit from PC MAX LLC (AS214176), confirmed over 2 runs
+2026-11-16	link_added	Azertelecom LLC (AS196925) now takes transit from Stadtwerke Feldkirch (AS48362), confirmed over 2 runs
+2026-11-16	link_removed	Azertelecom LLC (AS196925) no longer takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs
+2026-11-16	link_removed	Delta Telecom Ltd (AS29049) no longer takes transit from Nessus GmbH (AS47692), confirmed over 2 runs

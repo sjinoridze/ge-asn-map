@@ -1,19 +1,46 @@
 {
- "built": "2026-11-15 07:58 UTC",
+ "built": "2026-11-16 08:06 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-15",
-  "since": "2026-11-14",
+  "date": "2026-11-16",
+  "since": "2026-11-15",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS214176",
-    "dst": "AS215348",
-    "text": "Gonet LLC Tbilisi, Georgia (AS215348) now takes transit from PC MAX LLC (AS214176), confirmed over 2 runs"
+    "src": "AS48362",
+    "dst": "AS196925",
+    "text": "Azertelecom LLC (AS196925) now takes transit from Stadtwerke Feldkirch (AS48362), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS33891",
+    "dst": "AS196925",
+    "text": "Azertelecom LLC (AS196925) no longer takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS47692",
+    "dst": "AS29049",
+    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Nessus GmbH (AS47692), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-16",
+   "kind": "link_removed",
+   "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Nessus GmbH (AS47692), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "link_removed",
+   "text": "Azertelecom LLC (AS196925) no longer takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-16",
+   "kind": "link_added",
+   "text": "Azertelecom LLC (AS196925) now takes transit from Stadtwerke Feldkirch (AS48362), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-15",
    "kind": "link_added",
