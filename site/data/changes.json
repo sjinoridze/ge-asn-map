@@ -1,31 +1,68 @@
 {
- "built": "2026-11-16 08:06 UTC",
+ "built": "2026-11-17 09:20 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-16",
-  "since": "2026-11-15",
+  "date": "2026-11-17",
+  "since": "2026-11-16",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS48362",
-    "dst": "AS196925",
-    "text": "Azertelecom LLC (AS196925) now takes transit from Stadtwerke Feldkirch (AS48362), confirmed over 2 runs"
+    "src": "AS34019",
+    "dst": "AS43733",
+    "text": "Viva Armenia CJSC (AS43733) now takes transit from Hivane Association (AS34019), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS43733",
+    "dst": "AS198441",
+    "text": "Migtelecom LLC (AS198441) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS43733",
+    "dst": "AS43845",
+    "text": "ConnectTTo World Inc trading as Hi-Tech Gateway LLC Armenia branch (AS43845) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS7195",
+    "dst": "AS12297",
+    "text": "Telecom Armenia OJSC (AS12297) now takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
    },
    {
     "kind": "link_removed",
-    "src": "AS33891",
-    "dst": "AS196925",
-    "text": "Azertelecom LLC (AS196925) no longer takes transit from Core-Backbone GmbH (AS33891), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS47692",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) no longer takes transit from Nessus GmbH (AS47692), confirmed over 2 runs"
+    "src": "AS8218",
+    "dst": "AS12297",
+    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-17",
+   "kind": "link_removed",
+   "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "link_added",
+   "text": "Telecom Armenia OJSC (AS12297) now takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "link_added",
+   "text": "ConnectTTo World Inc trading as Hi-Tech Gateway LLC Armenia branch (AS43845) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "link_added",
+   "text": "Migtelecom LLC (AS198441) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-17",
+   "kind": "link_added",
+   "text": "Viva Armenia CJSC (AS43733) now takes transit from Hivane Association (AS34019), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-16",
    "kind": "link_removed",
