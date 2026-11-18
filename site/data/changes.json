@@ -1,43 +1,35 @@
 {
- "built": "2026-11-17 09:20 UTC",
+ "built": "2026-11-18 08:40 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-17",
-  "since": "2026-11-16",
+  "date": "2026-11-18",
+  "since": "2026-11-17",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS34019",
-    "dst": "AS43733",
-    "text": "Viva Armenia CJSC (AS43733) now takes transit from Hivane Association (AS34019), confirmed over 2 runs"
+    "src": "AS200823",
+    "dst": "AS218712",
+    "text": "Marketing Laboratory LLC (AS218712) now takes transit from MHost LLC (AS200823), confirmed over 2 runs"
    },
    {
     "kind": "link_added",
-    "src": "AS43733",
-    "dst": "AS198441",
-    "text": "Migtelecom LLC (AS198441) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS43733",
-    "dst": "AS43845",
-    "text": "ConnectTTo World Inc trading as Hi-Tech Gateway LLC Armenia branch (AS43845) now takes transit from Viva Armenia CJSC (AS43733), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS7195",
-    "dst": "AS12297",
-    "text": "Telecom Armenia OJSC (AS12297) now takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS8218",
-    "dst": "AS12297",
-    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs"
+    "src": "AS202413",
+    "dst": "AS197666",
+    "text": "STENCLOUD LLC (AS197666) now takes transit from Pronkin Timofei (AS202413), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-18",
+   "kind": "link_added",
+   "text": "STENCLOUD LLC (AS197666) now takes transit from Pronkin Timofei (AS202413), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-18",
+   "kind": "link_added",
+   "text": "Marketing Laboratory LLC (AS218712) now takes transit from MHost LLC (AS200823), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-17",
    "kind": "link_removed",
