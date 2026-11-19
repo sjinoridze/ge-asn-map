@@ -1,25 +1,56 @@
 {
- "built": "2026-11-18 08:40 UTC",
+ "built": "2026-11-19 08:53 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-18",
-  "since": "2026-11-17",
+  "date": "2026-11-19",
+  "since": "2026-11-18",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS200823",
-    "dst": "AS218712",
-    "text": "Marketing Laboratory LLC (AS218712) now takes transit from MHost LLC (AS200823), confirmed over 2 runs"
+    "src": "AS213958",
+    "dst": "AS218346",
+    "text": "Nariman Mammadov (AS218346) now takes transit from Furkan Kasap trading as Phoenix Sunucum Internet Hizmetleri (AS213958), confirmed over 2 runs"
    },
    {
     "kind": "link_added",
-    "src": "AS202413",
-    "dst": "AS197666",
-    "text": "STENCLOUD LLC (AS197666) now takes transit from Pronkin Timofei (AS202413), confirmed over 2 runs"
+    "src": "AS29691",
+    "dst": "AS196925",
+    "text": "Azertelecom LLC (AS196925) now takes transit from Nine Internet Solutions AG (AS29691), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS57293",
+    "dst": "AS14789",
+    "text": "Cloudflare Inc. (AS14789) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs"
+   },
+   {
+    "kind": "asn_up",
+    "src": "AS218079",
+    "text": "Azerlotereya Open Joint Stock Company (AS218079) started announcing routes"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-19",
+   "kind": "asn_up",
+   "text": "Azerlotereya Open Joint Stock Company (AS218079) started announcing routes"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "link_added",
+   "text": "Cloudflare Inc. (AS14789) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "link_added",
+   "text": "Azertelecom LLC (AS196925) now takes transit from Nine Internet Solutions AG (AS29691), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-19",
+   "kind": "link_added",
+   "text": "Nariman Mammadov (AS218346) now takes transit from Furkan Kasap trading as Phoenix Sunucum Internet Hizmetleri (AS213958), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-18",
    "kind": "link_added",

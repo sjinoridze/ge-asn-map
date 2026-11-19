@@ -878,3 +878,7 @@
 2026-11-17	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from Zayo Infrastructure France SA (AS8218), confirmed over 2 runs
 2026-11-18	link_added	Marketing Laboratory LLC (AS218712) now takes transit from MHost LLC (AS200823), confirmed over 2 runs
 2026-11-18	link_added	STENCLOUD LLC (AS197666) now takes transit from Pronkin Timofei (AS202413), confirmed over 2 runs
+2026-11-19	link_added	Nariman Mammadov (AS218346) now takes transit from Furkan Kasap trading as Phoenix Sunucum Internet Hizmetleri (AS213958), confirmed over 2 runs
+2026-11-19	link_added	Azertelecom LLC (AS196925) now takes transit from Nine Internet Solutions AG (AS29691), confirmed over 2 runs
+2026-11-19	link_added	Cloudflare Inc. (AS14789) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs
+2026-11-19	asn_up	Azerlotereya Open Joint Stock Company (AS218079) started announcing routes
