@@ -882,3 +882,5 @@
 2026-11-19	link_added	Azertelecom LLC (AS196925) now takes transit from Nine Internet Solutions AG (AS29691), confirmed over 2 runs
 2026-11-19	link_added	Cloudflare Inc. (AS14789) now takes transit from AG Telekom MMC. (AS57293), confirmed over 2 runs
 2026-11-19	asn_up	Azerlotereya Open Joint Stock Company (AS218079) started announcing routes
+2026-11-20	link_removed	GNC-Alfa CJSC (AS49800) no longer takes transit from BioNet LLC (AS42991), confirmed over 2 runs
+2026-11-20	asn_up	Telecom Armenia OJSC (AS35303) started announcing routes
