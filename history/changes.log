@@ -886,3 +886,18 @@
 2026-11-20	asn_up	Telecom Armenia OJSC (AS35303) started announcing routes
 2026-11-21	asn_up	SmartNet LLC (AS210824) started announcing routes
 2026-11-21	asn_new	New ASN in the list: Sandro Kvekveskiri (AS218025)
+2026-11-22	link_added	Delta Telecom Ltd (AS29049) now takes transit from SURF B.V. (AS1103), confirmed over 2 runs
+2026-11-22	link_added	Delta Telecom Ltd (AS29049) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs
+2026-11-22	link_added	EMIRASLAN EMIRASLANOV (AS219310) now takes transit from Packet Loss LTD (AS202831), confirmed over 2 runs
+2026-11-22	link_added	EMIRASLAN EMIRASLANOV (AS214946) now takes transit from EMIRASLAN EMIRASLANOV (AS215017), confirmed over 2 runs
+2026-11-22	link_added	Ulduz Net LLC (AS218658) now takes transit from NEOTELECOM SERVICES LLC (AS216232), confirmed over 2 runs
+2026-11-22	link_added	EMIRASLAN EMIRASLANOV (AS215017) now takes transit from JEZA CLOUD LLC (AS218452), confirmed over 2 runs
+2026-11-22	link_added	Nariman Mammadov (AS218346) now takes transit from JEZA CLOUD LLC (AS218452), confirmed over 2 runs
+2026-11-22	link_added	Delta Telecom Ltd (AS29049) now takes transit from Nessus GmbH (AS47692), confirmed over 2 runs
+2026-11-22	link_added	Delta Telecom Ltd (AS29049) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs
+2026-11-22	link_removed	EMIRASLAN EMIRASLANOV (AS219310) no longer takes transit from Vladyslav Koba (AS197324), confirmed over 2 runs
+2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from iFog GmbH (AS209533), confirmed over 2 runs
+2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Justas Gudynas (AS215899), confirmed over 2 runs
+2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Viktor Nesmeianov (AS218569), confirmed over 2 runs
+2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Bobeica Mihaita David (AS218995), confirmed over 2 runs
+2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Openfactory GmbH (AS41051), confirmed over 2 runs
