@@ -1,103 +1,57 @@
 {
- "built": "2026-11-22 08:04 UTC",
+ "built": "2026-11-23 09:13 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-22",
-  "since": "2026-11-21",
+  "date": "2026-11-23",
+  "since": "2026-11-22",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS1103",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) now takes transit from SURF B.V. (AS1103), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS196925",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) now takes transit from Azertelecom LLC (AS196925), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS202831",
-    "dst": "AS219310",
-    "text": "EMIRASLAN EMIRASLANOV (AS219310) now takes transit from Packet Loss LTD (AS202831), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS215017",
-    "dst": "AS214946",
-    "text": "EMIRASLAN EMIRASLANOV (AS214946) now takes transit from EMIRASLAN EMIRASLANOV (AS215017), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS216232",
-    "dst": "AS218658",
-    "text": "Ulduz Net LLC (AS218658) now takes transit from NEOTELECOM SERVICES LLC (AS216232), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS218452",
-    "dst": "AS215017",
-    "text": "EMIRASLAN EMIRASLANOV (AS215017) now takes transit from JEZA CLOUD LLC (AS218452), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS218452",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) now takes transit from JEZA CLOUD LLC (AS218452), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS47692",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) now takes transit from Nessus GmbH (AS47692), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_added",
-    "src": "AS60068",
-    "dst": "AS29049",
-    "text": "Delta Telecom Ltd (AS29049) now takes transit from Datacamp Limited (AS60068), confirmed over 2 runs"
+    "src": "AS201986",
+    "dst": "AS9002",
+    "text": "RETN Limited (AS9002) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs"
    },
    {
     "kind": "link_removed",
-    "src": "AS197324",
-    "dst": "AS219310",
-    "text": "EMIRASLAN EMIRASLANOV (AS219310) no longer takes transit from Vladyslav Koba (AS197324), confirmed over 2 runs"
+    "src": "AS47147",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) no longer takes transit from Anexia Cloud Solutions GmbH (AS47147), confirmed over 2 runs"
    },
    {
     "kind": "link_removed",
-    "src": "AS209533",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from iFog GmbH (AS209533), confirmed over 2 runs"
+    "src": "AS7195",
+    "dst": "AS12297",
+    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
    },
    {
     "kind": "link_removed",
-    "src": "AS215899",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from Justas Gudynas (AS215899), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS218569",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from Viktor Nesmeianov (AS218569), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS218995",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from Bobeica Mihaita David (AS218995), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS41051",
-    "dst": "AS218346",
-    "text": "Nariman Mammadov (AS218346) no longer takes transit from Openfactory GmbH (AS41051), confirmed over 2 runs"
+    "src": "AS9002",
+    "dst": "AS201986",
+    "text": "Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-23",
+   "kind": "link_removed",
+   "text": "Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "link_removed",
+   "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "link_removed",
+   "text": "Ucom CJSC (AS8932) no longer takes transit from Anexia Cloud Solutions GmbH (AS47147), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-23",
+   "kind": "link_added",
+   "text": "RETN Limited (AS9002) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-22",
    "kind": "link_removed",

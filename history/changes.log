@@ -901,3 +901,7 @@
 2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Viktor Nesmeianov (AS218569), confirmed over 2 runs
 2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Bobeica Mihaita David (AS218995), confirmed over 2 runs
 2026-11-22	link_removed	Nariman Mammadov (AS218346) no longer takes transit from Openfactory GmbH (AS41051), confirmed over 2 runs
+2026-11-23	link_added	RETN Limited (AS9002) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs
+2026-11-23	link_removed	Ucom CJSC (AS8932) no longer takes transit from Anexia Cloud Solutions GmbH (AS47147), confirmed over 2 runs
+2026-11-23	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs
+2026-11-23	link_removed	Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs
