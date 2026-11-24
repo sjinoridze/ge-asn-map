@@ -1,37 +1,24 @@
 {
- "built": "2026-11-23 09:13 UTC",
+ "built": "2026-11-24 11:01 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-23",
-  "since": "2026-11-22",
+  "date": "2026-11-24",
+  "since": "2026-11-23",
   "items": [
    {
     "kind": "link_added",
-    "src": "AS201986",
-    "dst": "AS9002",
-    "text": "RETN Limited (AS9002) now takes transit from Arpinet LLC (AS201986), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS47147",
-    "dst": "AS8932",
-    "text": "Ucom CJSC (AS8932) no longer takes transit from Anexia Cloud Solutions GmbH (AS47147), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS7195",
-    "dst": "AS12297",
-    "text": "Telecom Armenia OJSC (AS12297) no longer takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs"
-   },
-   {
-    "kind": "link_removed",
-    "src": "AS9002",
-    "dst": "AS201986",
-    "text": "Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs"
+    "src": "AS49581",
+    "dst": "AS218025",
+    "text": "Sandro Kvekveskiri (AS218025) now takes transit from Ferdinand Zink trading as Tube-Hosting (AS49581), confirmed over 2 runs"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-24",
+   "kind": "link_added",
+   "text": "Sandro Kvekveskiri (AS218025) now takes transit from Ferdinand Zink trading as Tube-Hosting (AS49581), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-23",
    "kind": "link_removed",
