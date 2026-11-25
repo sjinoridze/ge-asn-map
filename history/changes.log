@@ -906,3 +906,4 @@
 2026-11-23	link_removed	Telecom Armenia OJSC (AS12297) no longer takes transit from EDGEUNO S.A.S (AS7195), confirmed over 2 runs
 2026-11-23	link_removed	Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs
 2026-11-24	link_added	Sandro Kvekveskiri (AS218025) now takes transit from Ferdinand Zink trading as Tube-Hosting (AS49581), confirmed over 2 runs
+2026-11-25	asn_down	Azerlotereya Open Joint Stock Company (AS218079) stopped announcing routes
