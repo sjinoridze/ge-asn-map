@@ -1,18 +1,100 @@
 {
- "built": "2026-11-25 09:57 UTC",
+ "built": "2026-11-26 09:38 UTC",
  "window_days": 30,
  "last_run": {
-  "date": "2026-11-25",
-  "since": "2026-11-24",
+  "date": "2026-11-26",
+  "since": "2026-11-25",
   "items": [
    {
+    "kind": "link_added",
+    "src": "AS202984",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) now takes transit from Chernyshov Aleksandr Aleksandrovich (AS202984), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS42991",
+    "dst": "AS49800",
+    "text": "GNC-Alfa CJSC (AS49800) now takes transit from BioNet LLC (AS42991), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_added",
+    "src": "AS5405",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS15576",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) no longer takes transit from NTS workspace AG (AS15576), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS41327",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) no longer takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS49434",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) no longer takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs"
+   },
+   {
+    "kind": "link_removed",
+    "src": "AS8455",
+    "dst": "AS8932",
+    "text": "Ucom CJSC (AS8932) no longer takes transit from atom86 BV (AS8455), confirmed over 2 runs"
+   },
+   {
     "kind": "asn_down",
-    "src": "AS218079",
-    "text": "Azerlotereya Open Joint Stock Company (AS218079) stopped announcing routes"
+    "src": "AS211944",
+    "text": "Narek Tadevosyan (AS211944) stopped announcing routes"
    }
   ]
  },
  "recent": [
+  {
+   "date": "2026-11-26",
+   "kind": "asn_down",
+   "text": "Narek Tadevosyan (AS211944) stopped announcing routes"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_removed",
+   "text": "Ucom CJSC (AS8932) no longer takes transit from atom86 BV (AS8455), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_removed",
+   "text": "Ucom CJSC (AS8932) no longer takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_removed",
+   "text": "Ucom CJSC (AS8932) no longer takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_removed",
+   "text": "Ucom CJSC (AS8932) no longer takes transit from NTS workspace AG (AS15576), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_added",
+   "text": "Ucom CJSC (AS8932) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_added",
+   "text": "GNC-Alfa CJSC (AS49800) now takes transit from BioNet LLC (AS42991), confirmed over 2 runs"
+  },
+  {
+   "date": "2026-11-26",
+   "kind": "link_added",
+   "text": "Ucom CJSC (AS8932) now takes transit from Chernyshov Aleksandr Aleksandrovich (AS202984), confirmed over 2 runs"
+  },
   {
    "date": "2026-11-25",
    "kind": "asn_down",

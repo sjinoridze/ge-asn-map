@@ -907,3 +907,11 @@
 2026-11-23	link_removed	Arpinet LLC (AS201986) no longer takes transit from RETN Limited (AS9002), confirmed over 2 runs
 2026-11-24	link_added	Sandro Kvekveskiri (AS218025) now takes transit from Ferdinand Zink trading as Tube-Hosting (AS49581), confirmed over 2 runs
 2026-11-25	asn_down	Azerlotereya Open Joint Stock Company (AS218079) stopped announcing routes
+2026-11-26	link_added	Ucom CJSC (AS8932) now takes transit from Chernyshov Aleksandr Aleksandrovich (AS202984), confirmed over 2 runs
+2026-11-26	link_added	GNC-Alfa CJSC (AS49800) now takes transit from BioNet LLC (AS42991), confirmed over 2 runs
+2026-11-26	link_added	Ucom CJSC (AS8932) now takes transit from Inter.link GmbH (AS5405), confirmed over 2 runs
+2026-11-26	link_removed	Ucom CJSC (AS8932) no longer takes transit from NTS workspace AG (AS15576), confirmed over 2 runs
+2026-11-26	link_removed	Ucom CJSC (AS8932) no longer takes transit from Fiber Telecom S.p.A. (AS41327), confirmed over 2 runs
+2026-11-26	link_removed	Ucom CJSC (AS8932) no longer takes transit from FBW NETWORKS SAS (AS49434), confirmed over 2 runs
+2026-11-26	link_removed	Ucom CJSC (AS8932) no longer takes transit from atom86 BV (AS8455), confirmed over 2 runs
+2026-11-26	asn_down	Narek Tadevosyan (AS211944) stopped announcing routes
